@@ -71,13 +71,7 @@ C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\Microso
 C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Sqlite.dll
-C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
-C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
-C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\SQLitePCLRaw.batteries_v2.dll
 C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\SQLitePCLRaw.core.dll
 C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\SQLitePCLRaw.provider.e_sqlite3.dll
@@ -105,3 +99,5 @@ C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\HotChoc
 C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\HotChocolate.Types.OffsetPagination.dll
 C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\FluentValidation.dll
 C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\obj\Debug\net8.0\GraphQLShop.sourcelink.json
+C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\obj\Debug\net8.0\swae.build.ex.cache

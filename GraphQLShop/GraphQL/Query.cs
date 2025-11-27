@@ -17,10 +17,24 @@ public class Query
         return db.Products.Include(p => p.Category);
     }
 
-    public Product GetProduct([Service] AppDbContext db, string name)
+    public List<Product> GetAllProductsRaw([Service] AppDbContext db)
+    {
+        return db.Products
+            .Include(p => p.Category) 
+            .ToList();
+    }
+
+    //public Product GetProduct([Service] AppDbContext db, string name)
+    //{
+    //    return db.Products
+    //        .Include(p => p.Category)
+    //        .FirstOrDefault(p => p.Name == name);
+    //}
+
+    public Product GetProduct([Service] AppDbContext db, int id)
     {
         return db.Products
             .Include(p => p.Category)
-            .FirstOrDefault(p => p.Name == name);
+            .FirstOrDefault(p => p.Id == id); // Ищем по Id
     }
 }
