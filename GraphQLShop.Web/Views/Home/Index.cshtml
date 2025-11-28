@@ -1,0 +1,100 @@
+﻿@model IReadOnlyList<GraphQLShop.Web.GraphQL.IGetProductsForIndex_Products_Items>
+
+@{
+    ViewData["Title"] = "Каталог товаров";
+}
+
+<div class="text-center mb-5">
+    <h1 class="display-4 fw-bold">Каталог товаров</h1>
+    <p class="text-muted">Управляйте ассортиментом вашего магазина</p>
+</div>
+
+@* --- НОВАЯ СТРУКТУРА: Кнопка и Поиск в одну строку --- *@
+<div class="row mb-4 align-items-center g-3">
+
+    @* Левая часть: Кнопка "Добавить" *@
+    <div class="col-auto">
+        <a asp-controller="Home" asp-action="Create" class="btn btn-success">
+            <i class="bi bi-plus-lg me-1"></i> Добавить товар
+        </a>
+    </div>
+
+    @* Правая часть: Форма поиска (займет оставшееся место) *@
+    <div class="col">
+        <form asp-action="Index" method="get">
+            <div class="input-group">
+                <span class="input-group-text bg-white text-muted border-end-0">
+                    <i class="bi bi-search"></i>
+                </span>
+                @* Поле ввода *@
+                <input class="form-control border-start-0 ps-0" type="text" placeholder="Поиск по названию..." name="searchTerm" value="@ViewData["CurrentFilter"]">
+                <button class="btn btn-outline-secondary" type="submit">Найти</button>
+            </div>
+
+            @* Ссылка "Сбросить" (появляется, если есть фильтр) *@
+            @if (!string.IsNullOrEmpty(ViewData["CurrentFilter"] as string))
+            {
+                <div class="mt-1 ms-2">
+                    <small>
+                        <a asp-action="Index" class="text-decoration-none text-muted">
+                            <i class="bi bi-x-circle"></i> Сбросить поиск
+                        </a>
+                    </small>
+                </div>
+            }
+        </form>
+    </div>
+</div>
+@* ---------------------------------------------------- *@
+
+<hr class="mb-4" />
+
+@if (Model == null || !Model.Any())
+{
+    <div class="alert alert-warning text-center">
+        Товары не найдены.
+    </div>
+}
+else
+{
+    @* ... ваш цикл с карточками ... *@
+    <div class="row row-cols-1 row-cols-md-3 g-3">
+        @* Перебираем список товаров *@
+        @foreach (var product in Model)
+        {
+            <div class="col">
+                @* Убрали h-100, чтобы карточки были по высоте контента *@
+                <div class="card shadow-sm">
+
+                    <div class="card-body">
+                        @* Добавили ID мелким серым шрифтом над названием *@
+                        <small class="text-muted">ID: #@product.Id</small>
+
+                        @* Название товара *@
+                        <h5 class="card-title text-truncate" title="@product.Name">
+                            @product.Name
+                        </h5>
+
+                        @* Категория *@
+                        <h6 class="card-subtitle mb-3 text-muted">
+                            Категория: @(product.Category?.Name ?? "Без категории")
+                        </h6>
+
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <div class="btn-group">
+                                @* Кнопки Изменить и Удалить *@
+                                <a asp-action="Edit" asp-route-id="@product.Id" class="btn btn-sm btn-outline-secondary">Изменить</a>
+                                <form asp-action="Delete" asp-route-id="@product.Id" method="post" class="d-inline"
+                                      onsubmit="return confirm('Вы уверены, что хотите удалить этот товар?');">
+                                    <button type="submit" class="btn btn-sm btn-outline-danger">Удалить</button>
+                                </form>
+                            </div>
+                            @* Цена *@
+                            <span class="text-success fw-bold fs-5">@product.Price.ToString("N0") ₽</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}

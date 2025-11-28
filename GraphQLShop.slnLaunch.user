@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Новый профиль",
+    "Projects": [
+      {
+        "Path": "GraphQLShop\\GraphQLShop.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "GraphQLShop.Web\\GraphQLShop.Web.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

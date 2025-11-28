@@ -1,0 +1,16 @@
+query GetProductsForIndex($term: String) {
+  products(
+    where: { name: { contains: $term } },
+    take: 20,
+    order: { price: DESC }
+  ) {
+    items {
+      id
+      name
+      price
+      category {
+        name
+      }
+    }
+  }
+}

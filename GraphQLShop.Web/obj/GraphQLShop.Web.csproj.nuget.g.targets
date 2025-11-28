@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)strawberryshake.server\15.1.11\build\StrawberryShake.Server.targets" Condition="Exists('$(NuGetPackageRoot)strawberryshake.server\15.1.11\build\StrawberryShake.Server.targets')" />
+  </ImportGroup>
+</Project>

@@ -3,40 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\gnz29\\Documents\\GitHub\\GraphQLShop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2D84EA53-3773-4E24-BE98-4B9D14AEA46F}|GraphQLShop\\GraphQLShop.csproj|c:\\users\\gnz29\\documents\\github\\graphqlshop\\graphqlshop\\graphql\\mutation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D84EA53-3773-4E24-BE98-4B9D14AEA46F}|GraphQLShop\\GraphQLShop.csproj|solutionrelative:graphqlshop\\graphql\\mutation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6998AFF6-6BBE-478E-9335-B22F0F3BDE0B}|GraphQLShop.Web\\GraphQLShop.Web.csproj|c:\\users\\gnz29\\documents\\github\\graphqlshop\\graphqlshop.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6998AFF6-6BBE-478E-9335-B22F0F3BDE0B}|GraphQLShop.Web\\GraphQLShop.Web.csproj|solutionrelative:graphqlshop.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D84EA53-3773-4E24-BE98-4B9D14AEA46F}|GraphQLShop\\GraphQLShop.csproj|c:\\users\\gnz29\\documents\\github\\graphqlshop\\graphqlshop\\validators\\addproductinputvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D84EA53-3773-4E24-BE98-4B9D14AEA46F}|GraphQLShop\\GraphQLShop.csproj|solutionrelative:graphqlshop\\validators\\addproductinputvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6998AFF6-6BBE-478E-9335-B22F0F3BDE0B}|GraphQLShop.Web\\GraphQLShop.Web.csproj|c:\\users\\gnz29\\documents\\github\\graphqlshop\\graphqlshop.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6998AFF6-6BBE-478E-9335-B22F0F3BDE0B}|GraphQLShop.Web\\GraphQLShop.Web.csproj|solutionrelative:graphqlshop.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D84EA53-3773-4E24-BE98-4B9D14AEA46F}|GraphQLShop\\GraphQLShop.csproj|c:\\users\\gnz29\\documents\\github\\graphqlshop\\graphqlshop\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D84EA53-3773-4E24-BE98-4B9D14AEA46F}|GraphQLShop\\GraphQLShop.csproj|solutionrelative:graphqlshop\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6998AFF6-6BBE-478E-9335-B22F0F3BDE0B}|GraphQLShop.Web\\GraphQLShop.Web.csproj|c:\\users\\gnz29\\documents\\github\\graphqlshop\\graphqlshop.web\\graphql\\getproducts.graphql||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{6998AFF6-6BBE-478E-9335-B22F0F3BDE0B}|GraphQLShop.Web\\GraphQLShop.Web.csproj|solutionrelative:graphqlshop.web\\graphql\\getproducts.graphql||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D84EA53-3773-4E24-BE98-4B9D14AEA46F}|GraphQLShop\\GraphQLShop.csproj|c:\\users\\gnz29\\documents\\github\\graphqlshop\\graphqlshop\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D84EA53-3773-4E24-BE98-4B9D14AEA46F}|GraphQLShop\\GraphQLShop.csproj|solutionrelative:graphqlshop\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D84EA53-3773-4E24-BE98-4B9D14AEA46F}|GraphQLShop\\GraphQLShop.csproj|c:\\users\\gnz29\\documents\\github\\graphqlshop\\graphqlshop\\graphql\\query.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D84EA53-3773-4E24-BE98-4B9D14AEA46F}|GraphQLShop\\GraphQLShop.csproj|solutionrelative:graphqlshop\\graphql\\query.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D84EA53-3773-4E24-BE98-4B9D14AEA46F}|GraphQLShop\\GraphQLShop.csproj|c:\\users\\gnz29\\documents\\github\\graphqlshop\\graphqlshop\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D84EA53-3773-4E24-BE98-4B9D14AEA46F}|GraphQLShop\\GraphQLShop.csproj|solutionrelative:graphqlshop\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D84EA53-3773-4E24-BE98-4B9D14AEA46F}|GraphQLShop\\GraphQLShop.csproj|c:\\users\\gnz29\\documents\\github\\graphqlshop\\graphqlshop\\graphql\\inputs\\updateproductinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D84EA53-3773-4E24-BE98-4B9D14AEA46F}|GraphQLShop\\GraphQLShop.csproj|solutionrelative:graphqlshop\\graphql\\inputs\\updateproductinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D84EA53-3773-4E24-BE98-4B9D14AEA46F}|GraphQLShop\\GraphQLShop.csproj|c:\\users\\gnz29\\documents\\github\\graphqlshop\\graphqlshop\\graphql\\inputs\\addproductinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D84EA53-3773-4E24-BE98-4B9D14AEA46F}|GraphQLShop\\GraphQLShop.csproj|solutionrelative:graphqlshop\\graphql\\inputs\\addproductinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D84EA53-3773-4E24-BE98-4B9D14AEA46F}|GraphQLShop\\GraphQLShop.csproj|c:\\users\\gnz29\\documents\\github\\graphqlshop\\graphqlshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D84EA53-3773-4E24-BE98-4B9D14AEA46F}|GraphQLShop\\GraphQLShop.csproj|solutionrelative:graphqlshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6998AFF6-6BBE-478E-9335-B22F0F3BDE0B}|GraphQLShop.Web\\GraphQLShop.Web.csproj|c:\\users\\gnz29\\documents\\github\\graphqlshop\\graphqlshop.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6998AFF6-6BBE-478E-9335-B22F0F3BDE0B}|GraphQLShop.Web\\GraphQLShop.Web.csproj|solutionrelative:graphqlshop.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,99 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Mutation.cs",
-              "DocumentMoniker": "C:\\Users\\gnz29\\Documents\\GitHub\\GraphQLShop\\GraphQLShop\\GraphQL\\Mutation.cs",
-              "RelativeDocumentMoniker": "GraphQLShop\\GraphQL\\Mutation.cs",
-              "ToolTip": "C:\\Users\\gnz29\\Documents\\GitHub\\GraphQLShop\\GraphQLShop\\GraphQL\\Mutation.cs",
-              "RelativeToolTip": "GraphQLShop\\GraphQL\\Mutation.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T07:46:25.447Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AddProductInputValidator.cs",
-              "DocumentMoniker": "C:\\Users\\gnz29\\Documents\\GitHub\\GraphQLShop\\GraphQLShop\\Validators\\AddProductInputValidator.cs",
-              "RelativeDocumentMoniker": "GraphQLShop\\Validators\\AddProductInputValidator.cs",
-              "ToolTip": "C:\\Users\\gnz29\\Documents\\GitHub\\GraphQLShop\\GraphQLShop\\Validators\\AddProductInputValidator.cs",
-              "RelativeToolTip": "GraphQLShop\\Validators\\AddProductInputValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T07:46:01.867Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\gnz29\\Documents\\GitHub\\GraphQLShop\\GraphQLShop\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "GraphQLShop\\Models\\Product.cs",
-              "ToolTip": "C:\\Users\\gnz29\\Documents\\GitHub\\GraphQLShop\\GraphQLShop\\Models\\Product.cs",
-              "RelativeToolTip": "GraphQLShop\\Models\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T07:45:51.378Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\gnz29\\Documents\\GitHub\\GraphQLShop\\GraphQLShop\\Models\\Category.cs",
-              "RelativeDocumentMoniker": "GraphQLShop\\Models\\Category.cs",
-              "ToolTip": "C:\\Users\\gnz29\\Documents\\GitHub\\GraphQLShop\\GraphQLShop\\Models\\Category.cs",
-              "RelativeToolTip": "GraphQLShop\\Models\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T07:45:30.616Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\gnz29\\Documents\\GitHub\\GraphQLShop\\GraphQLShop\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "GraphQLShop\\Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\gnz29\\Documents\\GitHub\\GraphQLShop\\GraphQLShop\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "GraphQLShop\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T07:43:36.164Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UpdateProductInput.cs",
-              "DocumentMoniker": "C:\\Users\\gnz29\\Documents\\GitHub\\GraphQLShop\\GraphQLShop\\GraphQL\\Inputs\\UpdateProductInput.cs",
-              "RelativeDocumentMoniker": "GraphQLShop\\GraphQL\\Inputs\\UpdateProductInput.cs",
-              "ToolTip": "C:\\Users\\gnz29\\Documents\\GitHub\\GraphQLShop\\GraphQLShop\\GraphQL\\Inputs\\UpdateProductInput.cs",
-              "RelativeToolTip": "GraphQLShop\\GraphQL\\Inputs\\UpdateProductInput.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T07:43:11.735Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AddProductInput.cs",
-              "DocumentMoniker": "C:\\Users\\gnz29\\Documents\\GitHub\\GraphQLShop\\GraphQLShop\\GraphQL\\Inputs\\AddProductInput.cs",
-              "RelativeDocumentMoniker": "GraphQLShop\\GraphQL\\Inputs\\AddProductInput.cs",
-              "ToolTip": "C:\\Users\\gnz29\\Documents\\GitHub\\GraphQLShop\\GraphQLShop\\GraphQL\\Inputs\\AddProductInput.cs",
-              "RelativeToolTip": "GraphQLShop\\GraphQL\\Inputs\\AddProductInput.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T07:42:32.741Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -153,29 +42,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Query.cs",
-              "DocumentMoniker": "C:\\Users\\gnz29\\Documents\\GitHub\\GraphQLShop\\GraphQLShop\\GraphQL\\Query.cs",
-              "RelativeDocumentMoniker": "GraphQLShop\\GraphQL\\Query.cs",
-              "ToolTip": "C:\\Users\\gnz29\\Documents\\GitHub\\GraphQLShop\\GraphQLShop\\GraphQL\\Query.cs",
-              "RelativeToolTip": "GraphQLShop\\GraphQL\\Query.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAswCYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T21:42:19.058Z",
+              "DocumentIndex": 2,
+              "Title": "GetProducts.graphql",
+              "DocumentMoniker": "C:\\Users\\gnz29\\Documents\\GitHub\\GraphQLShop\\GraphQLShop.Web\\GraphQL\\GetProducts.graphql",
+              "RelativeDocumentMoniker": "GraphQLShop.Web\\GraphQL\\GetProducts.graphql",
+              "ToolTip": "C:\\Users\\gnz29\\Documents\\GitHub\\GraphQLShop\\GraphQLShop.Web\\GraphQL\\GetProducts.graphql",
+              "RelativeToolTip": "GraphQLShop.Web\\GraphQL\\GetProducts.graphql",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-28T10:40:01.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\gnz29\\Documents\\GitHub\\GraphQLShop\\GraphQLShop.Web\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "GraphQLShop.Web\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\gnz29\\Documents\\GitHub\\GraphQLShop\\GraphQLShop.Web\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "GraphQLShop.Web\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-28T10:34:26.011Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\gnz29\\Documents\\GitHub\\GraphQLShop\\GraphQLShop\\Program.cs",
-              "RelativeDocumentMoniker": "GraphQLShop\\Program.cs",
-              "ToolTip": "C:\\Users\\gnz29\\Documents\\GitHub\\GraphQLShop\\GraphQLShop\\Program.cs",
-              "RelativeToolTip": "GraphQLShop\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAASAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\gnz29\\Documents\\GitHub\\GraphQLShop\\GraphQLShop.Web\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "GraphQLShop.Web\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\gnz29\\Documents\\GitHub\\GraphQLShop\\GraphQLShop.Web\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "GraphQLShop.Web\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAcwCkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T14:05:13.158Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-28T08:26:02.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\gnz29\\Documents\\GitHub\\GraphQLShop\\GraphQLShop.Web\\Program.cs",
+              "RelativeDocumentMoniker": "GraphQLShop.Web\\Program.cs",
+              "ToolTip": "C:\\Users\\gnz29\\Documents\\GitHub\\GraphQLShop\\GraphQLShop.Web\\Program.cs",
+              "RelativeToolTip": "GraphQLShop.Web\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T08:04:11.612Z"
             }
           ]
         }

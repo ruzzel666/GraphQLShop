@@ -1,0 +1,211 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "GraphQLShop.Web/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Http": "8.0.1",
+          "StrawberryShake.Server": "15.1.11"
+        },
+        "runtime": {
+          "GraphQLShop.Web.dll": {}
+        }
+      },
+      "HotChocolate.Language.SyntaxTree/15.1.11": {
+        "runtime": {
+          "lib/net8.0/HotChocolate.Language.SyntaxTree.dll": {
+            "assemblyVersion": "15.1.11.0",
+            "fileVersion": "15.1.11.0"
+          }
+        }
+      },
+      "HotChocolate.Transport.Abstractions/15.1.11": {
+        "dependencies": {
+          "HotChocolate.Language.SyntaxTree": "15.1.11",
+          "HotChocolate.Utilities.Buffers": "15.1.11"
+        },
+        "runtime": {
+          "lib/net8.0/HotChocolate.Transport.Abstractions.dll": {
+            "assemblyVersion": "15.1.11.0",
+            "fileVersion": "15.1.11.0"
+          }
+        }
+      },
+      "HotChocolate.Transport.Http/15.1.11": {
+        "dependencies": {
+          "HotChocolate.Transport.Abstractions": "15.1.11",
+          "HotChocolate.Utilities": "15.1.11",
+          "HotChocolate.Utilities.Buffers": "15.1.11"
+        },
+        "runtime": {
+          "lib/net8.0/HotChocolate.Transport.Http.dll": {
+            "assemblyVersion": "15.1.11.0",
+            "fileVersion": "15.1.11.0"
+          }
+        }
+      },
+      "HotChocolate.Utilities/15.1.11": {
+        "runtime": {
+          "lib/net8.0/HotChocolate.Utilities.dll": {
+            "assemblyVersion": "15.1.11.0",
+            "fileVersion": "15.1.11.0"
+          }
+        }
+      },
+      "HotChocolate.Utilities.Buffers/15.1.11": {
+        "runtime": {
+          "lib/net8.0/HotChocolate.Buffers.dll": {
+            "assemblyVersion": "15.1.11.0",
+            "fileVersion": "15.1.11.0"
+          }
+        }
+      },
+      "Microsoft.Extensions.Http/8.0.1": {
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Http.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.1024.46610"
+          }
+        }
+      },
+      "StrawberryShake.Core/15.1.11": {
+        "dependencies": {
+          "StrawberryShake.Resources": "15.1.11"
+        },
+        "runtime": {
+          "lib/net8.0/StrawberryShake.Core.dll": {
+            "assemblyVersion": "15.1.11.0",
+            "fileVersion": "15.1.11.0"
+          }
+        }
+      },
+      "StrawberryShake.Resources/15.1.11": {
+        "runtime": {
+          "lib/net8.0/StrawberryShake.Resources.dll": {
+            "assemblyVersion": "15.1.11.0",
+            "fileVersion": "15.1.11.0"
+          }
+        }
+      },
+      "StrawberryShake.Server/15.1.11": {
+        "dependencies": {
+          "StrawberryShake.Core": "15.1.11",
+          "StrawberryShake.Transport.Http": "15.1.11",
+          "StrawberryShake.Transport.WebSockets": "15.1.11"
+        }
+      },
+      "StrawberryShake.Transport.Http/15.1.11": {
+        "dependencies": {
+          "HotChocolate.Transport.Http": "15.1.11",
+          "StrawberryShake.Core": "15.1.11"
+        },
+        "runtime": {
+          "lib/net8.0/StrawberryShake.Transport.Http.dll": {
+            "assemblyVersion": "15.1.11.0",
+            "fileVersion": "15.1.11.0"
+          }
+        }
+      },
+      "StrawberryShake.Transport.WebSockets/15.1.11": {
+        "dependencies": {
+          "StrawberryShake.Core": "15.1.11",
+          "StrawberryShake.Resources": "15.1.11"
+        },
+        "runtime": {
+          "lib/net8.0/StrawberryShake.Transport.WebSockets.dll": {
+            "assemblyVersion": "15.1.11.0",
+            "fileVersion": "15.1.11.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GraphQLShop.Web/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HotChocolate.Language.SyntaxTree/15.1.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HkSzQOPojIfVa8JUmGl2E2TUcc3gznD4l3thjf3L1UpNT2jO/5LGy//YzvqM4Cdhm5J/4KVCLebPbYc3xjmnhw==",
+      "path": "hotchocolate.language.syntaxtree/15.1.11",
+      "hashPath": "hotchocolate.language.syntaxtree.15.1.11.nupkg.sha512"
+    },
+    "HotChocolate.Transport.Abstractions/15.1.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Itzn5DlRgH8DcDBNLMZ8P3zcvN/52ilyybEqy8KIGw47DvbYk4HGZBI2yD11V/61htFnPDLkaGKef5iWjuh1ow==",
+      "path": "hotchocolate.transport.abstractions/15.1.11",
+      "hashPath": "hotchocolate.transport.abstractions.15.1.11.nupkg.sha512"
+    },
+    "HotChocolate.Transport.Http/15.1.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sMfEyo086sOZ77q3CpiNT9Qi9f/G9ickICfof3N64CSADnd8nEu9kETqpi1ZyxC+LEbNPPpkCQnNBB0uEa8MsQ==",
+      "path": "hotchocolate.transport.http/15.1.11",
+      "hashPath": "hotchocolate.transport.http.15.1.11.nupkg.sha512"
+    },
+    "HotChocolate.Utilities/15.1.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-L3s+JcELmABlI+PTyj5tTNI/AuuHS80PLaMz2Lm+xHif8+5fb+jajzX3HimP2ERQ0HJW5rR05mh4K7jX4TN7ZA==",
+      "path": "hotchocolate.utilities/15.1.11",
+      "hashPath": "hotchocolate.utilities.15.1.11.nupkg.sha512"
+    },
+    "HotChocolate.Utilities.Buffers/15.1.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WBJQUGflyzy6sHcLStfQwDdgNJXhb1iNuXAm4CBsXAmYTYEyHbzggvjsQQwBL78Ui4WXInLO9Pj5yTzZdklmkg==",
+      "path": "hotchocolate.utilities.buffers/15.1.11",
+      "hashPath": "hotchocolate.utilities.buffers.15.1.11.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Http/8.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kDYeKJUzh0qeg/AI+nSr3ffthmXYQTEb0nS9qRC7YhSbbuN4M4NPbaB77AJwtkTnCV9XZ7qYj3dkZaNcyl73EA==",
+      "path": "microsoft.extensions.http/8.0.1",
+      "hashPath": "microsoft.extensions.http.8.0.1.nupkg.sha512"
+    },
+    "StrawberryShake.Core/15.1.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bJFza5OGdsFzzJE9hktZ7mbhV85DII78DgSNVMB1hVoabhC1MYdy2J3j3p/nWlR/sFtHfFuGck/3nozLtDdTVQ==",
+      "path": "strawberryshake.core/15.1.11",
+      "hashPath": "strawberryshake.core.15.1.11.nupkg.sha512"
+    },
+    "StrawberryShake.Resources/15.1.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-i1TNpRWLlh3lGu2vRf+yGtltp/zL5/xK+NoDcIFRTWZwVRq6VbAt9LgeROlh/7snsiM1CbWbBqQQ7i4TgI3YZA==",
+      "path": "strawberryshake.resources/15.1.11",
+      "hashPath": "strawberryshake.resources.15.1.11.nupkg.sha512"
+    },
+    "StrawberryShake.Server/15.1.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BdsAccbCu3NvbebJNOwqY7TWMReqeFPG0h3ySRcas8rhUkR2AYgGNKqsxjH4m5BlWN32Vo/hEo+5umWsxftlZg==",
+      "path": "strawberryshake.server/15.1.11",
+      "hashPath": "strawberryshake.server.15.1.11.nupkg.sha512"
+    },
+    "StrawberryShake.Transport.Http/15.1.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8bq72Y8Mhvt+XH4U69Tw35swVyVhb9Iv8afYvLxoeFvHim5qDz0s/xWfuMUgw93lxUOLuNrvQ+nxRkckib5Ylw==",
+      "path": "strawberryshake.transport.http/15.1.11",
+      "hashPath": "strawberryshake.transport.http.15.1.11.nupkg.sha512"
+    },
+    "StrawberryShake.Transport.WebSockets/15.1.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bVxiYHu59pl3BNZiFQcPW9n0Gs4dEQsUAzr0+ngB8nmVeQxa4aOqV7zo9XFy39N/BZFxPRFwb8BPuC6DlG69OQ==",
+      "path": "strawberryshake.transport.websockets/15.1.11",
+      "hashPath": "strawberryshake.transport.websockets.15.1.11.nupkg.sha512"
+    }
+  }
+}
