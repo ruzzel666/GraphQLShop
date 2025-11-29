@@ -4,11 +4,13 @@ using HotChocolate.Types;
 using Microsoft.EntityFrameworkCore;
 using GraphQLShop.Data;   
 using GraphQLShop.Models;
+using HotChocolate.Authorization;
 
 namespace GraphQLShop.GraphQL;
 
 public class Query
 {
+    [Authorize]
     [UseOffsetPaging(IncludeTotalCount = true)]
     [UseFiltering]
     [UseSorting]

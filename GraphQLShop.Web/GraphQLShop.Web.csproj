@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -11,10 +11,13 @@
     <GraphQL Remove="graphql\DeleteProduct.graphql" />
     <GraphQL Remove="graphql\GetProductById.graphql" />
     <GraphQL Remove="graphql\GetProducts.graphql" />
+    <GraphQL Remove="graphql\Login.graphql" />
+    <GraphQL Remove="graphql\Register.graphql" />
     <GraphQL Remove="graphql\UpdateProduct.graphql" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.1" />
     <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.1" />
     <PackageReference Include="StrawberryShake.Server" Version="15.1.11" />
   </ItemGroup>

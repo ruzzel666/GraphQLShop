@@ -1,11 +1,28 @@
+using GraphQLShop.Web.Handlers;
+using Microsoft.Extensions.DependencyInjection;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddTransient<AuthHeaderHandler>();
+
 builder.Services
     .AddGraphQLShopClient()
-       .ConfigureHttpClient(client => client.BaseAddress = new Uri("https://localhost:7273/graphql"));
+    .ConfigureHttpClient(
+        client =>
+        {
+            // Настройка самого клиента
+            client.BaseAddress = new Uri("https://localhost:7273/graphql");
+        },
+        builder =>
+        {
+            // Здесь builder — это IHttpClientBuilder, поэтому метод доступен
+            builder.AddHttpMessageHandler<AuthHeaderHandler>();
+        }
+    );
 
 var app = builder.Build();
 

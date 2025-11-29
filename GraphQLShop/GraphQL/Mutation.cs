@@ -1,8 +1,10 @@
-﻿using HotChocolate;
-using FluentValidation;
+﻿using FluentValidation;
 using GraphQLShop.Data;
-using GraphQLShop.Models;
 using GraphQLShop.GraphQL.Inputs;
+using GraphQLShop.Models;
+using GraphQLShop.Services;
+using HotChocolate;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace GraphQLShop.GraphQL;
@@ -95,5 +97,68 @@ public class Mutation
         await db.SaveChangesAsync();
 
         return true; // Возвращаем true, если удаление прошло успешно
+    }
+
+    // НОВАЯ МУТАЦИЯ ЛОГИНА
+    public async Task<AuthPayload> Login(
+        [Service] AppDbContext db,
+        [Service] ITokenService tokenService, // Наш новый сервис
+        LoginInput input)
+    {
+        // 1. Ищем пользователя по имени
+        var user = await db.Users.FirstOrDefaultAsync(u => u.Username == input.Username);
+
+        if (user == null)
+        {
+            // Никогда не пишите "Пользователь не найден", пишите общую ошибку для безопасности
+            throw new GraphQLException("Неверное имя пользователя или пароль.");
+        }
+
+        // 2. Проверяем пароль (сравниваем введенный пароль с хешем в базе)
+        var hasher = new PasswordHasher<User>();
+        var result = hasher.VerifyHashedPassword(user, user.PasswordHash, input.Password);
+
+        if (result == PasswordVerificationResult.Failed)
+        {
+            throw new GraphQLException("Неверное имя пользователя или пароль.");
+        }
+
+        // 3. Если всё ок, генерируем токен
+        var token = tokenService.GenerateToken(user);
+
+        // 4. Возвращаем токен клиенту
+        return new AuthPayload(token, user.Username);
+    }
+
+    public async Task<AuthPayload> Register(
+    [Service] AppDbContext db,
+    [Service] ITokenService tokenService,
+    RegisterInput input)
+    {
+        // 1. Проверяем, существует ли уже такой пользователь
+        if (await db.Users.AnyAsync(u => u.Username == input.Username))
+        {
+            throw new GraphQLException("Пользователь с таким именем уже существует.");
+        }
+
+        // 2. Создаем нового пользователя
+        var user = new User
+        {
+            Username = input.Username,
+            Role = "User" // По умолчанию все новые - просто пользователи
+        };
+
+        // 3. Хешируем пароль
+        var hasher = new PasswordHasher<User>();
+        user.PasswordHash = hasher.HashPassword(user, input.Password);
+
+        // 4. Сохраняем в БД
+        db.Users.Add(user);
+        await db.SaveChangesAsync();
+
+        // 5. Сразу генерируем токен, чтобы пользователь был "залогинен"
+        var token = tokenService.GenerateToken(user);
+
+        return new AuthPayload(token, user.Username);
     }
 }

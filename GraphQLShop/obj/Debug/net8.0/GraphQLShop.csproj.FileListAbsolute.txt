@@ -101,3 +101,13 @@ C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\obj\Debug\net8.0\refint\
 C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\obj\Debug\net8.0\GraphQLShop.pdb
 C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\obj\Debug\net8.0\GraphQLShop.genruntimeconfig.cache
 C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\obj\Debug\net8.0\ref\GraphQLShop.dll
+C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\HotChocolate.AspNetCore.Authorization.dll

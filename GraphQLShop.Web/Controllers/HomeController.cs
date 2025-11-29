@@ -34,9 +34,18 @@ public class HomeController : Controller
         // Передаем подготовленную строку termToSend
         var result = await _graphQLClient.GetProductsForIndex.ExecuteAsync(term: termToSend);
 
-        result.EnsureNoErrors();
+        // Вместо жесткого EnsureNoErrors(), проверяем мягко
+        if (result.IsErrorResult())
+        {
+            // Проверяем, есть ли ошибка авторизации (код AUTH_NOT_AUTHENTICATED или сообщение)
+            // Обычно GraphQL возвращает специфический код, но для простоты проверим наличие ошибок
+            // и перенаправим на логин.
 
-        // ... остальной код без изменений
+            // Если хотите, можете проверить текст ошибки: 
+            // if (result.Errors.Any(e => e.Message.Contains("not authorized"))) ...
+
+            return RedirectToAction("Login", "Account");
+        }
         var products = result.Data!.Products!.Items;
         return View(products);
     }

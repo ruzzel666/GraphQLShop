@@ -46,3 +46,4 @@ C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop.Web\obj\Debug\net8.0\ref
 C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop.Web\obj\Debug\net8.0\GraphQLShop.Web.pdb
 C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop.Web\obj\Debug\net8.0\GraphQLShop.Web.genruntimeconfig.cache
 C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop.Web\obj\Debug\net8.0\ref\GraphQLShop.Web.dll
+C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop.Web\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll

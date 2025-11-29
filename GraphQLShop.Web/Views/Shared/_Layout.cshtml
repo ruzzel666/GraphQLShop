@@ -26,6 +26,27 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                     </ul>
+                    <ul class="navbar-nav ms-auto">
+                        @* Проверяем, есть ли кука с токеном *@
+                        @if (Context.Request.Cookies.ContainsKey("X-Access-Token"))
+                        {
+                            @* Если есть — показываем кнопку "Выйти" *@
+                            <li class="nav-item">
+                                <form class="form-inline" asp-controller="Account" asp-action="Logout" method="post">
+                                    <button type="submit" class="nav-link btn btn-link text-dark border-0" style="cursor: pointer;">
+                                        Выйти
+                                    </button>
+                                </form>
+                            </li>
+                        }
+                        else
+                        {
+                            @* Если нет — показываем ссылку "Войти" *@
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="Account" asp-action="Login">Войти</a>
+                            </li>
+                        }
+                    </ul>
                 </div>
             </div>
         </nav>

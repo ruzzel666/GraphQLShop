@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "FBae6v3JWLQ=",
+  "dgSpecHash": "ps6xsPMBydI=",
   "success": true,
   "projectFilePath": "C:\\Users\\gnz29\\Documents\\GitHub\\GraphQLShop\\GraphQLShop.Web\\GraphQLShop.Web.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\gnz29\\.nuget\\packages\\hotchocolate.transport.http\\15.1.11\\hotchocolate.transport.http.15.1.11.nupkg.sha512",
     "C:\\Users\\gnz29\\.nuget\\packages\\hotchocolate.utilities\\15.1.11\\hotchocolate.utilities.15.1.11.nupkg.sha512",
     "C:\\Users\\gnz29\\.nuget\\packages\\hotchocolate.utilities.buffers\\15.1.11\\hotchocolate.utilities.buffers.15.1.11.nupkg.sha512",
+    "C:\\Users\\gnz29\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.1\\microsoft.extensions.dependencyinjection.8.0.1.nupkg.sha512",
     "C:\\Users\\gnz29\\.nuget\\packages\\microsoft.extensions.http\\8.0.1\\microsoft.extensions.http.8.0.1.nupkg.sha512",
     "C:\\Users\\gnz29\\.nuget\\packages\\strawberryshake.core\\15.1.11\\strawberryshake.core.15.1.11.nupkg.sha512",
     "C:\\Users\\gnz29\\.nuget\\packages\\strawberryshake.resources\\15.1.11\\strawberryshake.resources.15.1.11.nupkg.sha512",
@@ -25,6 +26,15 @@
       "code": "NU1510",
       "level": "Warning",
       "message": "Пакетная ссылка Microsoft.Extensions.Http не будет очищена. Рассмотрите возможность удаления этого пакета из зависимостей, так как он, скорее всего, не требуется.",
+      "projectPath": "C:\\Users\\gnz29\\Documents\\GitHub\\GraphQLShop\\GraphQLShop.Web\\GraphQLShop.Web.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\gnz29\\Documents\\GitHub\\GraphQLShop\\GraphQLShop.Web\\GraphQLShop.Web.csproj",
+      "targetGraphs": []
+    },
+    {
+      "code": "NU1510",
+      "level": "Warning",
+      "message": "Пакетная ссылка Microsoft.Extensions.DependencyInjection не будет очищена. Рассмотрите возможность удаления этого пакета из зависимостей, так как он, скорее всего, не требуется.",
       "projectPath": "C:\\Users\\gnz29\\Documents\\GitHub\\GraphQLShop\\GraphQLShop.Web\\GraphQLShop.Web.csproj",
       "warningLevel": 1,
       "filePath": "C:\\Users\\gnz29\\Documents\\GitHub\\GraphQLShop\\GraphQLShop.Web\\GraphQLShop.Web.csproj",

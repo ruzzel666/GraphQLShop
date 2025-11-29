@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ypPjjo2SMcY=",
+  "dgSpecHash": "lYbsjgfoYZ0=",
   "success": true,
   "projectFilePath": "C:\\Users\\gnz29\\Documents\\GitHub\\GraphQLShop\\GraphQLShop\\GraphQLShop.csproj",
   "expectedPackageFiles": [
@@ -15,6 +15,7 @@
     "C:\\Users\\gnz29\\.nuget\\packages\\hotchocolate\\15.1.11\\hotchocolate.15.1.11.nupkg.sha512",
     "C:\\Users\\gnz29\\.nuget\\packages\\hotchocolate.abstractions\\15.1.11\\hotchocolate.abstractions.15.1.11.nupkg.sha512",
     "C:\\Users\\gnz29\\.nuget\\packages\\hotchocolate.aspnetcore\\15.1.11\\hotchocolate.aspnetcore.15.1.11.nupkg.sha512",
+    "C:\\Users\\gnz29\\.nuget\\packages\\hotchocolate.aspnetcore.authorization\\15.1.11\\hotchocolate.aspnetcore.authorization.15.1.11.nupkg.sha512",
     "C:\\Users\\gnz29\\.nuget\\packages\\hotchocolate.authorization\\15.1.11\\hotchocolate.authorization.15.1.11.nupkg.sha512",
     "C:\\Users\\gnz29\\.nuget\\packages\\hotchocolate.costanalysis\\15.1.11\\hotchocolate.costanalysis.15.1.11.nupkg.sha512",
     "C:\\Users\\gnz29\\.nuget\\packages\\hotchocolate.data\\15.1.11\\hotchocolate.data.15.1.11.nupkg.sha512",
@@ -44,6 +45,7 @@
     "C:\\Users\\gnz29\\.nuget\\packages\\hotchocolate.utilities\\15.1.11\\hotchocolate.utilities.15.1.11.nupkg.sha512",
     "C:\\Users\\gnz29\\.nuget\\packages\\hotchocolate.utilities.dependencyinjection\\15.1.11\\hotchocolate.utilities.dependencyinjection.15.1.11.nupkg.sha512",
     "C:\\Users\\gnz29\\.nuget\\packages\\hotchocolate.validation\\15.1.11\\hotchocolate.validation.15.1.11.nupkg.sha512",
+    "C:\\Users\\gnz29\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.22\\microsoft.aspnetcore.authentication.jwtbearer.8.0.22.nupkg.sha512",
     "C:\\Users\\gnz29\\.nuget\\packages\\microsoft.data.sqlite.core\\8.0.22\\microsoft.data.sqlite.core.8.0.22.nupkg.sha512",
     "C:\\Users\\gnz29\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.22\\microsoft.entityframeworkcore.8.0.22.nupkg.sha512",
     "C:\\Users\\gnz29\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.22\\microsoft.entityframeworkcore.abstractions.8.0.22.nupkg.sha512",
@@ -52,10 +54,18 @@
     "C:\\Users\\gnz29\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite\\8.0.22\\microsoft.entityframeworkcore.sqlite.8.0.22.nupkg.sha512",
     "C:\\Users\\gnz29\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite.core\\8.0.22\\microsoft.entityframeworkcore.sqlite.core.8.0.22.nupkg.sha512",
     "C:\\Users\\gnz29\\.nuget\\packages\\microsoft.extensions.dependencymodel\\8.0.2\\microsoft.extensions.dependencymodel.8.0.2.nupkg.sha512",
+    "C:\\Users\\gnz29\\.nuget\\packages\\microsoft.extensions.identity.core\\8.0.22\\microsoft.extensions.identity.core.8.0.22.nupkg.sha512",
+    "C:\\Users\\gnz29\\.nuget\\packages\\microsoft.identitymodel.abstractions\\7.1.2\\microsoft.identitymodel.abstractions.7.1.2.nupkg.sha512",
+    "C:\\Users\\gnz29\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\7.1.2\\microsoft.identitymodel.jsonwebtokens.7.1.2.nupkg.sha512",
+    "C:\\Users\\gnz29\\.nuget\\packages\\microsoft.identitymodel.logging\\7.1.2\\microsoft.identitymodel.logging.7.1.2.nupkg.sha512",
+    "C:\\Users\\gnz29\\.nuget\\packages\\microsoft.identitymodel.protocols\\7.1.2\\microsoft.identitymodel.protocols.7.1.2.nupkg.sha512",
+    "C:\\Users\\gnz29\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\7.1.2\\microsoft.identitymodel.protocols.openidconnect.7.1.2.nupkg.sha512",
+    "C:\\Users\\gnz29\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.1.2\\microsoft.identitymodel.tokens.7.1.2.nupkg.sha512",
     "C:\\Users\\gnz29\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.6\\sqlitepclraw.bundle_e_sqlite3.2.1.6.nupkg.sha512",
     "C:\\Users\\gnz29\\.nuget\\packages\\sqlitepclraw.core\\2.1.6\\sqlitepclraw.core.2.1.6.nupkg.sha512",
     "C:\\Users\\gnz29\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.6\\sqlitepclraw.lib.e_sqlite3.2.1.6.nupkg.sha512",
     "C:\\Users\\gnz29\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.6\\sqlitepclraw.provider.e_sqlite3.2.1.6.nupkg.sha512",
+    "C:\\Users\\gnz29\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.1.2\\system.identitymodel.tokens.jwt.7.1.2.nupkg.sha512",
     "C:\\Users\\gnz29\\.nuget\\packages\\system.io.hashing\\8.0.0\\system.io.hashing.8.0.0.nupkg.sha512",
     "C:\\Users\\gnz29\\.nuget\\packages\\yarp.reverseproxy\\2.3.0\\yarp.reverseproxy.2.3.0.nupkg.sha512",
     "C:\\Users\\gnz29\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.22\\microsoft.windowsdesktop.app.ref.8.0.22.nupkg.sha512",
@@ -63,5 +73,15 @@
     "C:\\Users\\gnz29\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.22\\microsoft.aspnetcore.app.ref.8.0.22.nupkg.sha512",
     "C:\\Users\\gnz29\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.22\\microsoft.netcore.app.host.win-x64.8.0.22.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1510",
+      "level": "Warning",
+      "message": "Пакетная ссылка Microsoft.Extensions.Identity.Core не будет очищена. Рассмотрите возможность удаления этого пакета из зависимостей, так как он, скорее всего, не требуется.",
+      "projectPath": "C:\\Users\\gnz29\\Documents\\GitHub\\GraphQLShop\\GraphQLShop\\GraphQLShop.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\gnz29\\Documents\\GitHub\\GraphQLShop\\GraphQLShop\\GraphQLShop.csproj",
+      "targetGraphs": []
+    }
+  ]
 }

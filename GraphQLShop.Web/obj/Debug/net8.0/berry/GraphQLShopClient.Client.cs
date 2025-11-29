@@ -759,6 +759,292 @@ namespace GraphQLShop.Web.GraphQL
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "15.1.11.0")]
+    public partial class LoginResult : global::System.IEquatable<LoginResult>, ILoginResult
+    {
+        public LoginResult(global::GraphQLShop.Web.GraphQL.ILogin_Login login)
+        {
+            Login = login;
+        }
+
+        public global::GraphQLShop.Web.GraphQL.ILogin_Login Login { get; }
+
+        public virtual global::System.Boolean Equals(LoginResult? other)
+        {
+            if (ReferenceEquals(null, other))
+            {
+                return false;
+            }
+
+            if (ReferenceEquals(this, other))
+            {
+                return true;
+            }
+
+            if (other.GetType() != GetType())
+            {
+                return false;
+            }
+
+            return (Login.Equals(other.Login));
+        }
+
+        public override global::System.Boolean Equals(global::System.Object? obj)
+        {
+            if (ReferenceEquals(null, obj))
+            {
+                return false;
+            }
+
+            if (ReferenceEquals(this, obj))
+            {
+                return true;
+            }
+
+            if (obj.GetType() != GetType())
+            {
+                return false;
+            }
+
+            return Equals((LoginResult)obj);
+        }
+
+        public override global::System.Int32 GetHashCode()
+        {
+            unchecked
+            {
+                int hash = 5;
+                hash ^= 397 * Login.GetHashCode();
+                return hash;
+            }
+        }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "15.1.11.0")]
+    public partial class Login_Login_AuthPayload : global::System.IEquatable<Login_Login_AuthPayload>, ILogin_Login_AuthPayload
+    {
+        public Login_Login_AuthPayload(global::System.String token, global::System.String username)
+        {
+            Token = token;
+            Username = username;
+        }
+
+        public global::System.String Token { get; }
+        public global::System.String Username { get; }
+
+        public virtual global::System.Boolean Equals(Login_Login_AuthPayload? other)
+        {
+            if (ReferenceEquals(null, other))
+            {
+                return false;
+            }
+
+            if (ReferenceEquals(this, other))
+            {
+                return true;
+            }
+
+            if (other.GetType() != GetType())
+            {
+                return false;
+            }
+
+            return (Token.Equals(other.Token)) && Username.Equals(other.Username);
+        }
+
+        public override global::System.Boolean Equals(global::System.Object? obj)
+        {
+            if (ReferenceEquals(null, obj))
+            {
+                return false;
+            }
+
+            if (ReferenceEquals(this, obj))
+            {
+                return true;
+            }
+
+            if (obj.GetType() != GetType())
+            {
+                return false;
+            }
+
+            return Equals((Login_Login_AuthPayload)obj);
+        }
+
+        public override global::System.Int32 GetHashCode()
+        {
+            unchecked
+            {
+                int hash = 5;
+                hash ^= 397 * Token.GetHashCode();
+                hash ^= 397 * Username.GetHashCode();
+                return hash;
+            }
+        }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "15.1.11.0")]
+    public partial interface ILoginResult
+    {
+        public global::GraphQLShop.Web.GraphQL.ILogin_Login Login { get; }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "15.1.11.0")]
+    public partial interface ILogin_Login
+    {
+        public global::System.String Token { get; }
+        public global::System.String Username { get; }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "15.1.11.0")]
+    public partial interface ILogin_Login_AuthPayload : ILogin_Login
+    {
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "15.1.11.0")]
+    public partial class RegisterResult : global::System.IEquatable<RegisterResult>, IRegisterResult
+    {
+        public RegisterResult(global::GraphQLShop.Web.GraphQL.IRegister_Register register)
+        {
+            Register = register;
+        }
+
+        public global::GraphQLShop.Web.GraphQL.IRegister_Register Register { get; }
+
+        public virtual global::System.Boolean Equals(RegisterResult? other)
+        {
+            if (ReferenceEquals(null, other))
+            {
+                return false;
+            }
+
+            if (ReferenceEquals(this, other))
+            {
+                return true;
+            }
+
+            if (other.GetType() != GetType())
+            {
+                return false;
+            }
+
+            return (Register.Equals(other.Register));
+        }
+
+        public override global::System.Boolean Equals(global::System.Object? obj)
+        {
+            if (ReferenceEquals(null, obj))
+            {
+                return false;
+            }
+
+            if (ReferenceEquals(this, obj))
+            {
+                return true;
+            }
+
+            if (obj.GetType() != GetType())
+            {
+                return false;
+            }
+
+            return Equals((RegisterResult)obj);
+        }
+
+        public override global::System.Int32 GetHashCode()
+        {
+            unchecked
+            {
+                int hash = 5;
+                hash ^= 397 * Register.GetHashCode();
+                return hash;
+            }
+        }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "15.1.11.0")]
+    public partial class Register_Register_AuthPayload : global::System.IEquatable<Register_Register_AuthPayload>, IRegister_Register_AuthPayload
+    {
+        public Register_Register_AuthPayload(global::System.String token, global::System.String username)
+        {
+            Token = token;
+            Username = username;
+        }
+
+        public global::System.String Token { get; }
+        public global::System.String Username { get; }
+
+        public virtual global::System.Boolean Equals(Register_Register_AuthPayload? other)
+        {
+            if (ReferenceEquals(null, other))
+            {
+                return false;
+            }
+
+            if (ReferenceEquals(this, other))
+            {
+                return true;
+            }
+
+            if (other.GetType() != GetType())
+            {
+                return false;
+            }
+
+            return (Token.Equals(other.Token)) && Username.Equals(other.Username);
+        }
+
+        public override global::System.Boolean Equals(global::System.Object? obj)
+        {
+            if (ReferenceEquals(null, obj))
+            {
+                return false;
+            }
+
+            if (ReferenceEquals(this, obj))
+            {
+                return true;
+            }
+
+            if (obj.GetType() != GetType())
+            {
+                return false;
+            }
+
+            return Equals((Register_Register_AuthPayload)obj);
+        }
+
+        public override global::System.Int32 GetHashCode()
+        {
+            unchecked
+            {
+                int hash = 5;
+                hash ^= 397 * Token.GetHashCode();
+                hash ^= 397 * Username.GetHashCode();
+                return hash;
+            }
+        }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "15.1.11.0")]
+    public partial interface IRegisterResult
+    {
+        public global::GraphQLShop.Web.GraphQL.IRegister_Register Register { get; }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "15.1.11.0")]
+    public partial interface IRegister_Register
+    {
+        public global::System.String Token { get; }
+        public global::System.String Username { get; }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "15.1.11.0")]
+    public partial interface IRegister_Register_AuthPayload : IRegister_Register
+    {
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "15.1.11.0")]
     public partial class UpdateProductResult : global::System.IEquatable<UpdateProductResult>, IUpdateProductResult
     {
         public UpdateProductResult(global::GraphQLShop.Web.GraphQL.IUpdateProduct_UpdateProduct updateProduct)
@@ -2368,6 +2654,630 @@ namespace GraphQLShop.Web.GraphQL
     }
 
     /// <summary>
+    /// Represents the operation service of the Login GraphQL operation
+    /// <code>
+    /// mutation Login($username: String!, $password: String!) {
+    ///   login(input: { username: $username, password: $password }) {
+    ///     __typename
+    ///     token
+    ///     username
+    ///   }
+    /// }
+    /// </code>
+    /// </summary>
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "15.1.11.0")]
+    public partial class LoginMutationDocument : global::StrawberryShake.IDocument
+    {
+        private LoginMutationDocument()
+        {
+        }
+
+        public static LoginMutationDocument Instance { get; } = new LoginMutationDocument();
+        public global::StrawberryShake.OperationKind Kind => global::StrawberryShake.OperationKind.Mutation;
+        public global::System.ReadOnlySpan<global::System.Byte> Body => new global::System.Byte[]
+        {
+            0x6d,
+            0x75,
+            0x74,
+            0x61,
+            0x74,
+            0x69,
+            0x6f,
+            0x6e,
+            0x20,
+            0x4c,
+            0x6f,
+            0x67,
+            0x69,
+            0x6e,
+            0x28,
+            0x24,
+            0x75,
+            0x73,
+            0x65,
+            0x72,
+            0x6e,
+            0x61,
+            0x6d,
+            0x65,
+            0x3a,
+            0x20,
+            0x53,
+            0x74,
+            0x72,
+            0x69,
+            0x6e,
+            0x67,
+            0x21,
+            0x2c,
+            0x20,
+            0x24,
+            0x70,
+            0x61,
+            0x73,
+            0x73,
+            0x77,
+            0x6f,
+            0x72,
+            0x64,
+            0x3a,
+            0x20,
+            0x53,
+            0x74,
+            0x72,
+            0x69,
+            0x6e,
+            0x67,
+            0x21,
+            0x29,
+            0x20,
+            0x7b,
+            0x20,
+            0x6c,
+            0x6f,
+            0x67,
+            0x69,
+            0x6e,
+            0x28,
+            0x69,
+            0x6e,
+            0x70,
+            0x75,
+            0x74,
+            0x3a,
+            0x20,
+            0x7b,
+            0x20,
+            0x75,
+            0x73,
+            0x65,
+            0x72,
+            0x6e,
+            0x61,
+            0x6d,
+            0x65,
+            0x3a,
+            0x20,
+            0x24,
+            0x75,
+            0x73,
+            0x65,
+            0x72,
+            0x6e,
+            0x61,
+            0x6d,
+            0x65,
+            0x2c,
+            0x20,
+            0x70,
+            0x61,
+            0x73,
+            0x73,
+            0x77,
+            0x6f,
+            0x72,
+            0x64,
+            0x3a,
+            0x20,
+            0x24,
+            0x70,
+            0x61,
+            0x73,
+            0x73,
+            0x77,
+            0x6f,
+            0x72,
+            0x64,
+            0x20,
+            0x7d,
+            0x29,
+            0x20,
+            0x7b,
+            0x20,
+            0x5f,
+            0x5f,
+            0x74,
+            0x79,
+            0x70,
+            0x65,
+            0x6e,
+            0x61,
+            0x6d,
+            0x65,
+            0x20,
+            0x74,
+            0x6f,
+            0x6b,
+            0x65,
+            0x6e,
+            0x20,
+            0x75,
+            0x73,
+            0x65,
+            0x72,
+            0x6e,
+            0x61,
+            0x6d,
+            0x65,
+            0x20,
+            0x7d,
+            0x20,
+            0x7d
+        };
+        public global::StrawberryShake.DocumentHash Hash { get; } = new global::StrawberryShake.DocumentHash("md5Hash", "3dc6185b6382e59f4db760453c9aa09c");
+
+        public override global::System.String ToString()
+        {
+#if NETCOREAPP3_1_OR_GREATER
+        return global::System.Text.Encoding.UTF8.GetString(Body);
+#else
+            return global::System.Text.Encoding.UTF8.GetString(Body.ToArray());
+#endif
+        }
+    }
+
+    /// <summary>
+    /// Represents the operation service of the Login GraphQL operation
+    /// <code>
+    /// mutation Login($username: String!, $password: String!) {
+    ///   login(input: { username: $username, password: $password }) {
+    ///     __typename
+    ///     token
+    ///     username
+    ///   }
+    /// }
+    /// </code>
+    /// </summary>
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "15.1.11.0")]
+    public partial class LoginMutation : global::GraphQLShop.Web.GraphQL.ILoginMutation
+    {
+        private readonly global::StrawberryShake.IOperationExecutor<ILoginResult> _operationExecutor;
+        private readonly global::StrawberryShake.Serialization.IInputValueFormatter _stringFormatter;
+        private readonly global::System.Collections.Immutable.ImmutableArray<global::System.Action<global::StrawberryShake.OperationRequest>> _configure = global::System.Collections.Immutable.ImmutableArray<global::System.Action<global::StrawberryShake.OperationRequest>>.Empty;
+        public LoginMutation(global::StrawberryShake.IOperationExecutor<ILoginResult> operationExecutor, global::StrawberryShake.Serialization.ISerializerResolver serializerResolver)
+        {
+            _operationExecutor = operationExecutor ?? throw new global::System.ArgumentNullException(nameof(operationExecutor));
+            _stringFormatter = serializerResolver.GetInputValueFormatter("String");
+        }
+
+        private LoginMutation(global::StrawberryShake.IOperationExecutor<ILoginResult> operationExecutor, global::System.Collections.Immutable.ImmutableArray<global::System.Action<global::StrawberryShake.OperationRequest>> configure, global::StrawberryShake.Serialization.IInputValueFormatter @stringFormatter)
+        {
+            _operationExecutor = operationExecutor;
+            _configure = configure;
+            _stringFormatter = @stringFormatter;
+        }
+
+        global::System.Type global::StrawberryShake.IOperationRequestFactory.ResultType => typeof(ILoginResult);
+
+        public global::GraphQLShop.Web.GraphQL.ILoginMutation With(global::System.Action<global::StrawberryShake.OperationRequest> configure)
+        {
+            return new global::GraphQLShop.Web.GraphQL.LoginMutation(_operationExecutor, _configure.Add(configure), _stringFormatter);
+        }
+
+        public global::GraphQLShop.Web.GraphQL.ILoginMutation WithRequestUri(global::System.Uri requestUri)
+        {
+            return With(r => r.ContextData["StrawberryShake.Transport.Http.HttpConnection.RequestUri"] = requestUri);
+        }
+
+        public global::GraphQLShop.Web.GraphQL.ILoginMutation WithHttpClient(global::System.Net.Http.HttpClient httpClient)
+        {
+            return With(r => r.ContextData["StrawberryShake.Transport.Http.HttpConnection.HttpClient"] = httpClient);
+        }
+
+        public async global::System.Threading.Tasks.Task<global::StrawberryShake.IOperationResult<ILoginResult>> ExecuteAsync(global::System.String username, global::System.String password, global::System.Threading.CancellationToken cancellationToken = default)
+        {
+            var request = CreateRequest(username, password);
+            foreach (var configure in _configure)
+            {
+                configure(request);
+            }
+
+            return await _operationExecutor.ExecuteAsync(request, cancellationToken).ConfigureAwait(false);
+        }
+
+        public global::System.IObservable<global::StrawberryShake.IOperationResult<ILoginResult>> Watch(global::System.String username, global::System.String password, global::StrawberryShake.ExecutionStrategy? strategy = null)
+        {
+            var request = CreateRequest(username, password);
+            return _operationExecutor.Watch(request, strategy);
+        }
+
+        private global::StrawberryShake.OperationRequest CreateRequest(global::System.String username, global::System.String password)
+        {
+            var variables = new global::System.Collections.Generic.Dictionary<global::System.String, global::System.Object?>();
+            variables.Add("username", FormatUsername(username));
+            variables.Add("password", FormatPassword(password));
+            return CreateRequest(variables);
+        }
+
+        private global::StrawberryShake.OperationRequest CreateRequest(global::System.Collections.Generic.IReadOnlyDictionary<global::System.String, global::System.Object?>? variables)
+        {
+            return new global::StrawberryShake.OperationRequest(id: LoginMutationDocument.Instance.Hash.Value, name: "Login", document: LoginMutationDocument.Instance, strategy: global::StrawberryShake.RequestStrategy.Default, variables: variables);
+        }
+
+        private global::System.Object? FormatUsername(global::System.String value)
+        {
+            if (value is null)
+            {
+                throw new global::System.ArgumentNullException(nameof(value));
+            }
+
+            return _stringFormatter.Format(value);
+        }
+
+        private global::System.Object? FormatPassword(global::System.String value)
+        {
+            if (value is null)
+            {
+                throw new global::System.ArgumentNullException(nameof(value));
+            }
+
+            return _stringFormatter.Format(value);
+        }
+
+        global::StrawberryShake.OperationRequest global::StrawberryShake.IOperationRequestFactory.Create(global::System.Collections.Generic.IReadOnlyDictionary<global::System.String, global::System.Object?>? variables)
+        {
+            return CreateRequest(variables!);
+        }
+    }
+
+    /// <summary>
+    /// Represents the operation service of the Login GraphQL operation
+    /// <code>
+    /// mutation Login($username: String!, $password: String!) {
+    ///   login(input: { username: $username, password: $password }) {
+    ///     __typename
+    ///     token
+    ///     username
+    ///   }
+    /// }
+    /// </code>
+    /// </summary>
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "15.1.11.0")]
+    public partial interface ILoginMutation : global::StrawberryShake.IOperationRequestFactory
+    {
+        global::GraphQLShop.Web.GraphQL.ILoginMutation With(global::System.Action<global::StrawberryShake.OperationRequest> configure);
+        global::GraphQLShop.Web.GraphQL.ILoginMutation WithRequestUri(global::System.Uri requestUri);
+        global::GraphQLShop.Web.GraphQL.ILoginMutation WithHttpClient(global::System.Net.Http.HttpClient httpClient);
+        global::System.Threading.Tasks.Task<global::StrawberryShake.IOperationResult<ILoginResult>> ExecuteAsync(global::System.String username, global::System.String password, global::System.Threading.CancellationToken cancellationToken = default);
+        global::System.IObservable<global::StrawberryShake.IOperationResult<ILoginResult>> Watch(global::System.String username, global::System.String password, global::StrawberryShake.ExecutionStrategy? strategy = null);
+    }
+
+    /// <summary>
+    /// Represents the operation service of the Register GraphQL operation
+    /// <code>
+    /// mutation Register($username: String!, $password: String!) {
+    ///   register(input: { username: $username, password: $password }) {
+    ///     __typename
+    ///     token
+    ///     username
+    ///   }
+    /// }
+    /// </code>
+    /// </summary>
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "15.1.11.0")]
+    public partial class RegisterMutationDocument : global::StrawberryShake.IDocument
+    {
+        private RegisterMutationDocument()
+        {
+        }
+
+        public static RegisterMutationDocument Instance { get; } = new RegisterMutationDocument();
+        public global::StrawberryShake.OperationKind Kind => global::StrawberryShake.OperationKind.Mutation;
+        public global::System.ReadOnlySpan<global::System.Byte> Body => new global::System.Byte[]
+        {
+            0x6d,
+            0x75,
+            0x74,
+            0x61,
+            0x74,
+            0x69,
+            0x6f,
+            0x6e,
+            0x20,
+            0x52,
+            0x65,
+            0x67,
+            0x69,
+            0x73,
+            0x74,
+            0x65,
+            0x72,
+            0x28,
+            0x24,
+            0x75,
+            0x73,
+            0x65,
+            0x72,
+            0x6e,
+            0x61,
+            0x6d,
+            0x65,
+            0x3a,
+            0x20,
+            0x53,
+            0x74,
+            0x72,
+            0x69,
+            0x6e,
+            0x67,
+            0x21,
+            0x2c,
+            0x20,
+            0x24,
+            0x70,
+            0x61,
+            0x73,
+            0x73,
+            0x77,
+            0x6f,
+            0x72,
+            0x64,
+            0x3a,
+            0x20,
+            0x53,
+            0x74,
+            0x72,
+            0x69,
+            0x6e,
+            0x67,
+            0x21,
+            0x29,
+            0x20,
+            0x7b,
+            0x20,
+            0x72,
+            0x65,
+            0x67,
+            0x69,
+            0x73,
+            0x74,
+            0x65,
+            0x72,
+            0x28,
+            0x69,
+            0x6e,
+            0x70,
+            0x75,
+            0x74,
+            0x3a,
+            0x20,
+            0x7b,
+            0x20,
+            0x75,
+            0x73,
+            0x65,
+            0x72,
+            0x6e,
+            0x61,
+            0x6d,
+            0x65,
+            0x3a,
+            0x20,
+            0x24,
+            0x75,
+            0x73,
+            0x65,
+            0x72,
+            0x6e,
+            0x61,
+            0x6d,
+            0x65,
+            0x2c,
+            0x20,
+            0x70,
+            0x61,
+            0x73,
+            0x73,
+            0x77,
+            0x6f,
+            0x72,
+            0x64,
+            0x3a,
+            0x20,
+            0x24,
+            0x70,
+            0x61,
+            0x73,
+            0x73,
+            0x77,
+            0x6f,
+            0x72,
+            0x64,
+            0x20,
+            0x7d,
+            0x29,
+            0x20,
+            0x7b,
+            0x20,
+            0x5f,
+            0x5f,
+            0x74,
+            0x79,
+            0x70,
+            0x65,
+            0x6e,
+            0x61,
+            0x6d,
+            0x65,
+            0x20,
+            0x74,
+            0x6f,
+            0x6b,
+            0x65,
+            0x6e,
+            0x20,
+            0x75,
+            0x73,
+            0x65,
+            0x72,
+            0x6e,
+            0x61,
+            0x6d,
+            0x65,
+            0x20,
+            0x7d,
+            0x20,
+            0x7d
+        };
+        public global::StrawberryShake.DocumentHash Hash { get; } = new global::StrawberryShake.DocumentHash("md5Hash", "812bbf18717c01be8fc96c5e2717f7b9");
+
+        public override global::System.String ToString()
+        {
+#if NETCOREAPP3_1_OR_GREATER
+        return global::System.Text.Encoding.UTF8.GetString(Body);
+#else
+            return global::System.Text.Encoding.UTF8.GetString(Body.ToArray());
+#endif
+        }
+    }
+
+    /// <summary>
+    /// Represents the operation service of the Register GraphQL operation
+    /// <code>
+    /// mutation Register($username: String!, $password: String!) {
+    ///   register(input: { username: $username, password: $password }) {
+    ///     __typename
+    ///     token
+    ///     username
+    ///   }
+    /// }
+    /// </code>
+    /// </summary>
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "15.1.11.0")]
+    public partial class RegisterMutation : global::GraphQLShop.Web.GraphQL.IRegisterMutation
+    {
+        private readonly global::StrawberryShake.IOperationExecutor<IRegisterResult> _operationExecutor;
+        private readonly global::StrawberryShake.Serialization.IInputValueFormatter _stringFormatter;
+        private readonly global::System.Collections.Immutable.ImmutableArray<global::System.Action<global::StrawberryShake.OperationRequest>> _configure = global::System.Collections.Immutable.ImmutableArray<global::System.Action<global::StrawberryShake.OperationRequest>>.Empty;
+        public RegisterMutation(global::StrawberryShake.IOperationExecutor<IRegisterResult> operationExecutor, global::StrawberryShake.Serialization.ISerializerResolver serializerResolver)
+        {
+            _operationExecutor = operationExecutor ?? throw new global::System.ArgumentNullException(nameof(operationExecutor));
+            _stringFormatter = serializerResolver.GetInputValueFormatter("String");
+        }
+
+        private RegisterMutation(global::StrawberryShake.IOperationExecutor<IRegisterResult> operationExecutor, global::System.Collections.Immutable.ImmutableArray<global::System.Action<global::StrawberryShake.OperationRequest>> configure, global::StrawberryShake.Serialization.IInputValueFormatter @stringFormatter)
+        {
+            _operationExecutor = operationExecutor;
+            _configure = configure;
+            _stringFormatter = @stringFormatter;
+        }
+
+        global::System.Type global::StrawberryShake.IOperationRequestFactory.ResultType => typeof(IRegisterResult);
+
+        public global::GraphQLShop.Web.GraphQL.IRegisterMutation With(global::System.Action<global::StrawberryShake.OperationRequest> configure)
+        {
+            return new global::GraphQLShop.Web.GraphQL.RegisterMutation(_operationExecutor, _configure.Add(configure), _stringFormatter);
+        }
+
+        public global::GraphQLShop.Web.GraphQL.IRegisterMutation WithRequestUri(global::System.Uri requestUri)
+        {
+            return With(r => r.ContextData["StrawberryShake.Transport.Http.HttpConnection.RequestUri"] = requestUri);
+        }
+
+        public global::GraphQLShop.Web.GraphQL.IRegisterMutation WithHttpClient(global::System.Net.Http.HttpClient httpClient)
+        {
+            return With(r => r.ContextData["StrawberryShake.Transport.Http.HttpConnection.HttpClient"] = httpClient);
+        }
+
+        public async global::System.Threading.Tasks.Task<global::StrawberryShake.IOperationResult<IRegisterResult>> ExecuteAsync(global::System.String username, global::System.String password, global::System.Threading.CancellationToken cancellationToken = default)
+        {
+            var request = CreateRequest(username, password);
+            foreach (var configure in _configure)
+            {
+                configure(request);
+            }
+
+            return await _operationExecutor.ExecuteAsync(request, cancellationToken).ConfigureAwait(false);
+        }
+
+        public global::System.IObservable<global::StrawberryShake.IOperationResult<IRegisterResult>> Watch(global::System.String username, global::System.String password, global::StrawberryShake.ExecutionStrategy? strategy = null)
+        {
+            var request = CreateRequest(username, password);
+            return _operationExecutor.Watch(request, strategy);
+        }
+
+        private global::StrawberryShake.OperationRequest CreateRequest(global::System.String username, global::System.String password)
+        {
+            var variables = new global::System.Collections.Generic.Dictionary<global::System.String, global::System.Object?>();
+            variables.Add("username", FormatUsername(username));
+            variables.Add("password", FormatPassword(password));
+            return CreateRequest(variables);
+        }
+
+        private global::StrawberryShake.OperationRequest CreateRequest(global::System.Collections.Generic.IReadOnlyDictionary<global::System.String, global::System.Object?>? variables)
+        {
+            return new global::StrawberryShake.OperationRequest(id: RegisterMutationDocument.Instance.Hash.Value, name: "Register", document: RegisterMutationDocument.Instance, strategy: global::StrawberryShake.RequestStrategy.Default, variables: variables);
+        }
+
+        private global::System.Object? FormatUsername(global::System.String value)
+        {
+            if (value is null)
+            {
+                throw new global::System.ArgumentNullException(nameof(value));
+            }
+
+            return _stringFormatter.Format(value);
+        }
+
+        private global::System.Object? FormatPassword(global::System.String value)
+        {
+            if (value is null)
+            {
+                throw new global::System.ArgumentNullException(nameof(value));
+            }
+
+            return _stringFormatter.Format(value);
+        }
+
+        global::StrawberryShake.OperationRequest global::StrawberryShake.IOperationRequestFactory.Create(global::System.Collections.Generic.IReadOnlyDictionary<global::System.String, global::System.Object?>? variables)
+        {
+            return CreateRequest(variables!);
+        }
+    }
+
+    /// <summary>
+    /// Represents the operation service of the Register GraphQL operation
+    /// <code>
+    /// mutation Register($username: String!, $password: String!) {
+    ///   register(input: { username: $username, password: $password }) {
+    ///     __typename
+    ///     token
+    ///     username
+    ///   }
+    /// }
+    /// </code>
+    /// </summary>
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "15.1.11.0")]
+    public partial interface IRegisterMutation : global::StrawberryShake.IOperationRequestFactory
+    {
+        global::GraphQLShop.Web.GraphQL.IRegisterMutation With(global::System.Action<global::StrawberryShake.OperationRequest> configure);
+        global::GraphQLShop.Web.GraphQL.IRegisterMutation WithRequestUri(global::System.Uri requestUri);
+        global::GraphQLShop.Web.GraphQL.IRegisterMutation WithHttpClient(global::System.Net.Http.HttpClient httpClient);
+        global::System.Threading.Tasks.Task<global::StrawberryShake.IOperationResult<IRegisterResult>> ExecuteAsync(global::System.String username, global::System.String password, global::System.Threading.CancellationToken cancellationToken = default);
+        global::System.IObservable<global::StrawberryShake.IOperationResult<IRegisterResult>> Watch(global::System.String username, global::System.String password, global::StrawberryShake.ExecutionStrategy? strategy = null);
+    }
+
+    /// <summary>
     /// Represents the operation service of the UpdateProduct GraphQL operation
     /// <code>
     /// mutation UpdateProduct($input: UpdateProductInput!) {
@@ -2644,13 +3554,17 @@ namespace GraphQLShop.Web.GraphQL
         private readonly global::GraphQLShop.Web.GraphQL.IDeleteProductMutation _deleteProduct;
         private readonly global::GraphQLShop.Web.GraphQL.IGetProductByIdQuery _getProductById;
         private readonly global::GraphQLShop.Web.GraphQL.IGetProductsForIndexQuery _getProductsForIndex;
+        private readonly global::GraphQLShop.Web.GraphQL.ILoginMutation _login;
+        private readonly global::GraphQLShop.Web.GraphQL.IRegisterMutation _register;
         private readonly global::GraphQLShop.Web.GraphQL.IUpdateProductMutation _updateProduct;
-        public GraphQLShopClient(global::GraphQLShop.Web.GraphQL.IAddProductMutation addProduct, global::GraphQLShop.Web.GraphQL.IDeleteProductMutation deleteProduct, global::GraphQLShop.Web.GraphQL.IGetProductByIdQuery getProductById, global::GraphQLShop.Web.GraphQL.IGetProductsForIndexQuery getProductsForIndex, global::GraphQLShop.Web.GraphQL.IUpdateProductMutation updateProduct)
+        public GraphQLShopClient(global::GraphQLShop.Web.GraphQL.IAddProductMutation addProduct, global::GraphQLShop.Web.GraphQL.IDeleteProductMutation deleteProduct, global::GraphQLShop.Web.GraphQL.IGetProductByIdQuery getProductById, global::GraphQLShop.Web.GraphQL.IGetProductsForIndexQuery getProductsForIndex, global::GraphQLShop.Web.GraphQL.ILoginMutation login, global::GraphQLShop.Web.GraphQL.IRegisterMutation register, global::GraphQLShop.Web.GraphQL.IUpdateProductMutation updateProduct)
         {
             _addProduct = addProduct ?? throw new global::System.ArgumentNullException(nameof(addProduct));
             _deleteProduct = deleteProduct ?? throw new global::System.ArgumentNullException(nameof(deleteProduct));
             _getProductById = getProductById ?? throw new global::System.ArgumentNullException(nameof(getProductById));
             _getProductsForIndex = getProductsForIndex ?? throw new global::System.ArgumentNullException(nameof(getProductsForIndex));
+            _login = login ?? throw new global::System.ArgumentNullException(nameof(login));
+            _register = register ?? throw new global::System.ArgumentNullException(nameof(register));
             _updateProduct = updateProduct ?? throw new global::System.ArgumentNullException(nameof(updateProduct));
         }
 
@@ -2659,6 +3573,8 @@ namespace GraphQLShop.Web.GraphQL
         public global::GraphQLShop.Web.GraphQL.IDeleteProductMutation DeleteProduct => _deleteProduct;
         public global::GraphQLShop.Web.GraphQL.IGetProductByIdQuery GetProductById => _getProductById;
         public global::GraphQLShop.Web.GraphQL.IGetProductsForIndexQuery GetProductsForIndex => _getProductsForIndex;
+        public global::GraphQLShop.Web.GraphQL.ILoginMutation Login => _login;
+        public global::GraphQLShop.Web.GraphQL.IRegisterMutation Register => _register;
         public global::GraphQLShop.Web.GraphQL.IUpdateProductMutation UpdateProduct => _updateProduct;
     }
 
@@ -2675,6 +3591,10 @@ namespace GraphQLShop.Web.GraphQL
         global::GraphQLShop.Web.GraphQL.IGetProductByIdQuery GetProductById { get; }
 
         global::GraphQLShop.Web.GraphQL.IGetProductsForIndexQuery GetProductsForIndex { get; }
+
+        global::GraphQLShop.Web.GraphQL.ILoginMutation Login { get; }
+
+        global::GraphQLShop.Web.GraphQL.IRegisterMutation Register { get; }
 
         global::GraphQLShop.Web.GraphQL.IUpdateProductMutation UpdateProduct { get; }
     }
@@ -2962,6 +3882,122 @@ namespace GraphQLShop.Web.GraphQL.State
         public global::StrawberryShake.IOperationResultDataInfo WithVersion(global::System.UInt64 version)
         {
             return new GetProductsForIndexResultInfo(Products);
+        }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "15.1.11.0")]
+    public partial class LoginResultFactory : global::StrawberryShake.IOperationResultDataFactory<global::GraphQLShop.Web.GraphQL.LoginResult>
+    {
+        public LoginResultFactory()
+        {
+        }
+
+        global::System.Type global::StrawberryShake.IOperationResultDataFactory.ResultType => typeof(global::GraphQLShop.Web.GraphQL.ILoginResult);
+
+        public LoginResult Create(global::StrawberryShake.IOperationResultDataInfo dataInfo, global::StrawberryShake.IEntityStoreSnapshot? snapshot = null)
+        {
+            if (dataInfo is LoginResultInfo info)
+            {
+                return new LoginResult(MapNonNullableILogin_Login(info.Login));
+            }
+
+            throw new global::System.ArgumentException("LoginResultInfo expected.");
+        }
+
+        private global::GraphQLShop.Web.GraphQL.ILogin_Login MapNonNullableILogin_Login(global::GraphQLShop.Web.GraphQL.State.AuthPayloadData data)
+        {
+            ILogin_Login returnValue = default !;
+            if (data.__typename.Equals("AuthPayload", global::System.StringComparison.Ordinal))
+            {
+                returnValue = new Login_Login_AuthPayload(data.Token ?? throw new global::System.ArgumentNullException(), data.Username ?? throw new global::System.ArgumentNullException());
+            }
+            else
+            {
+                throw new global::System.NotSupportedException();
+            }
+
+            return returnValue;
+        }
+
+        global::System.Object global::StrawberryShake.IOperationResultDataFactory.Create(global::StrawberryShake.IOperationResultDataInfo dataInfo, global::StrawberryShake.IEntityStoreSnapshot? snapshot)
+        {
+            return Create(dataInfo, snapshot);
+        }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "15.1.11.0")]
+    public partial class LoginResultInfo : global::StrawberryShake.IOperationResultDataInfo
+    {
+        public LoginResultInfo(global::GraphQLShop.Web.GraphQL.State.AuthPayloadData login)
+        {
+            Login = login;
+        }
+
+        public global::GraphQLShop.Web.GraphQL.State.AuthPayloadData Login { get; }
+        public global::System.Collections.Generic.IReadOnlyCollection<global::StrawberryShake.EntityId> EntityIds => global::System.Array.Empty<global::StrawberryShake.EntityId>();
+        public global::System.UInt64 Version => 0;
+
+        public global::StrawberryShake.IOperationResultDataInfo WithVersion(global::System.UInt64 version)
+        {
+            return new LoginResultInfo(Login);
+        }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "15.1.11.0")]
+    public partial class RegisterResultFactory : global::StrawberryShake.IOperationResultDataFactory<global::GraphQLShop.Web.GraphQL.RegisterResult>
+    {
+        public RegisterResultFactory()
+        {
+        }
+
+        global::System.Type global::StrawberryShake.IOperationResultDataFactory.ResultType => typeof(global::GraphQLShop.Web.GraphQL.IRegisterResult);
+
+        public RegisterResult Create(global::StrawberryShake.IOperationResultDataInfo dataInfo, global::StrawberryShake.IEntityStoreSnapshot? snapshot = null)
+        {
+            if (dataInfo is RegisterResultInfo info)
+            {
+                return new RegisterResult(MapNonNullableIRegister_Register(info.Register));
+            }
+
+            throw new global::System.ArgumentException("RegisterResultInfo expected.");
+        }
+
+        private global::GraphQLShop.Web.GraphQL.IRegister_Register MapNonNullableIRegister_Register(global::GraphQLShop.Web.GraphQL.State.AuthPayloadData data)
+        {
+            IRegister_Register returnValue = default !;
+            if (data.__typename.Equals("AuthPayload", global::System.StringComparison.Ordinal))
+            {
+                returnValue = new Register_Register_AuthPayload(data.Token ?? throw new global::System.ArgumentNullException(), data.Username ?? throw new global::System.ArgumentNullException());
+            }
+            else
+            {
+                throw new global::System.NotSupportedException();
+            }
+
+            return returnValue;
+        }
+
+        global::System.Object global::StrawberryShake.IOperationResultDataFactory.Create(global::StrawberryShake.IOperationResultDataInfo dataInfo, global::StrawberryShake.IEntityStoreSnapshot? snapshot)
+        {
+            return Create(dataInfo, snapshot);
+        }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "15.1.11.0")]
+    public partial class RegisterResultInfo : global::StrawberryShake.IOperationResultDataInfo
+    {
+        public RegisterResultInfo(global::GraphQLShop.Web.GraphQL.State.AuthPayloadData register)
+        {
+            Register = register;
+        }
+
+        public global::GraphQLShop.Web.GraphQL.State.AuthPayloadData Register { get; }
+        public global::System.Collections.Generic.IReadOnlyCollection<global::StrawberryShake.EntityId> EntityIds => global::System.Array.Empty<global::StrawberryShake.EntityId>();
+        public global::System.UInt64 Version => 0;
+
+        public global::StrawberryShake.IOperationResultDataInfo WithVersion(global::System.UInt64 version)
+        {
+            return new RegisterResultInfo(Register);
         }
     }
 
@@ -3414,6 +4450,114 @@ namespace GraphQLShop.Web.GraphQL.State
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "15.1.11.0")]
+    public partial class LoginBuilder : global::StrawberryShake.OperationResultBuilder<global::GraphQLShop.Web.GraphQL.ILoginResult>
+    {
+        private readonly global::StrawberryShake.Serialization.ILeafValueParser<global::System.String, global::System.String> _stringParser;
+        public LoginBuilder(global::StrawberryShake.IOperationResultDataFactory<global::GraphQLShop.Web.GraphQL.ILoginResult> resultDataFactory, global::StrawberryShake.Serialization.ISerializerResolver serializerResolver)
+        {
+            ResultDataFactory = resultDataFactory ?? throw new global::System.ArgumentNullException(nameof(resultDataFactory));
+            _stringParser = serializerResolver.GetLeafValueParser<global::System.String, global::System.String>("String") ?? throw new global::System.ArgumentException("No serializer for type `String` found.");
+        }
+
+        protected override global::StrawberryShake.IOperationResultDataFactory<global::GraphQLShop.Web.GraphQL.ILoginResult> ResultDataFactory { get; }
+
+        protected override global::StrawberryShake.IOperationResultDataInfo BuildData(global::System.Text.Json.JsonElement obj)
+        {
+            return new LoginResultInfo(Deserialize_NonNullableILogin_Login(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "login")));
+        }
+
+        private global::GraphQLShop.Web.GraphQL.State.AuthPayloadData Deserialize_NonNullableILogin_Login(global::System.Text.Json.JsonElement? obj)
+        {
+            if (!obj.HasValue)
+            {
+                throw new global::System.ArgumentNullException();
+            }
+
+            if (obj.Value.ValueKind == global::System.Text.Json.JsonValueKind.Null)
+            {
+                throw new global::System.ArgumentNullException();
+            }
+
+            var typename = obj.Value.GetProperty("__typename").GetString();
+            if (typename?.Equals("AuthPayload", global::System.StringComparison.Ordinal) ?? false)
+            {
+                return new global::GraphQLShop.Web.GraphQL.State.AuthPayloadData(typename, token: Deserialize_NonNullableString(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "token")), username: Deserialize_NonNullableString(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "username")));
+            }
+
+            throw new global::System.NotSupportedException();
+        }
+
+        private global::System.String Deserialize_NonNullableString(global::System.Text.Json.JsonElement? obj)
+        {
+            if (!obj.HasValue)
+            {
+                throw new global::System.ArgumentNullException();
+            }
+
+            if (obj.Value.ValueKind == global::System.Text.Json.JsonValueKind.Null)
+            {
+                throw new global::System.ArgumentNullException();
+            }
+
+            return _stringParser.Parse(obj.Value.GetString()!);
+        }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "15.1.11.0")]
+    public partial class RegisterBuilder : global::StrawberryShake.OperationResultBuilder<global::GraphQLShop.Web.GraphQL.IRegisterResult>
+    {
+        private readonly global::StrawberryShake.Serialization.ILeafValueParser<global::System.String, global::System.String> _stringParser;
+        public RegisterBuilder(global::StrawberryShake.IOperationResultDataFactory<global::GraphQLShop.Web.GraphQL.IRegisterResult> resultDataFactory, global::StrawberryShake.Serialization.ISerializerResolver serializerResolver)
+        {
+            ResultDataFactory = resultDataFactory ?? throw new global::System.ArgumentNullException(nameof(resultDataFactory));
+            _stringParser = serializerResolver.GetLeafValueParser<global::System.String, global::System.String>("String") ?? throw new global::System.ArgumentException("No serializer for type `String` found.");
+        }
+
+        protected override global::StrawberryShake.IOperationResultDataFactory<global::GraphQLShop.Web.GraphQL.IRegisterResult> ResultDataFactory { get; }
+
+        protected override global::StrawberryShake.IOperationResultDataInfo BuildData(global::System.Text.Json.JsonElement obj)
+        {
+            return new RegisterResultInfo(Deserialize_NonNullableIRegister_Register(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "register")));
+        }
+
+        private global::GraphQLShop.Web.GraphQL.State.AuthPayloadData Deserialize_NonNullableIRegister_Register(global::System.Text.Json.JsonElement? obj)
+        {
+            if (!obj.HasValue)
+            {
+                throw new global::System.ArgumentNullException();
+            }
+
+            if (obj.Value.ValueKind == global::System.Text.Json.JsonValueKind.Null)
+            {
+                throw new global::System.ArgumentNullException();
+            }
+
+            var typename = obj.Value.GetProperty("__typename").GetString();
+            if (typename?.Equals("AuthPayload", global::System.StringComparison.Ordinal) ?? false)
+            {
+                return new global::GraphQLShop.Web.GraphQL.State.AuthPayloadData(typename, token: Deserialize_NonNullableString(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "token")), username: Deserialize_NonNullableString(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "username")));
+            }
+
+            throw new global::System.NotSupportedException();
+        }
+
+        private global::System.String Deserialize_NonNullableString(global::System.Text.Json.JsonElement? obj)
+        {
+            if (!obj.HasValue)
+            {
+                throw new global::System.ArgumentNullException();
+            }
+
+            if (obj.Value.ValueKind == global::System.Text.Json.JsonValueKind.Null)
+            {
+                throw new global::System.ArgumentNullException();
+            }
+
+            return _stringParser.Parse(obj.Value.GetString()!);
+        }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "15.1.11.0")]
     public partial class UpdateProductBuilder : global::StrawberryShake.OperationResultBuilder<global::GraphQLShop.Web.GraphQL.IUpdateProductResult>
     {
         private readonly global::StrawberryShake.Serialization.ILeafValueParser<global::System.Int32, global::System.Int32> _intParser;
@@ -3549,6 +4693,21 @@ namespace GraphQLShop.Web.GraphQL.State
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "15.1.11.0")]
+    public partial class AuthPayloadData
+    {
+        public AuthPayloadData(global::System.String __typename, global::System.String? token = default !, global::System.String? username = default !)
+        {
+            this.__typename = __typename ?? throw new global::System.ArgumentNullException(nameof(__typename));
+            Token = token;
+            Username = username;
+        }
+
+        public global::System.String __typename { get; }
+        public global::System.String? Token { get; }
+        public global::System.String? Username { get; }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "15.1.11.0")]
     public partial class GraphQLShopClientStoreAccessor : global::StrawberryShake.IStoreAccessor
     {
         public global::StrawberryShake.IOperationStore OperationStore => throw new global::System.NotSupportedException("OperationStore is not supported in store less mode");
@@ -3585,11 +4744,15 @@ namespace Microsoft.Extensions.DependencyInjection
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::GraphQLShop.Web.GraphQL.DeleteProductMutation>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<ClientServiceProvider>(sp)));
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::GraphQLShop.Web.GraphQL.GetProductByIdQuery>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<ClientServiceProvider>(sp)));
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::GraphQLShop.Web.GraphQL.GetProductsForIndexQuery>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<ClientServiceProvider>(sp)));
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::GraphQLShop.Web.GraphQL.LoginMutation>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<ClientServiceProvider>(sp)));
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::GraphQLShop.Web.GraphQL.RegisterMutation>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<ClientServiceProvider>(sp)));
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::GraphQLShop.Web.GraphQL.UpdateProductMutation>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<ClientServiceProvider>(sp)));
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::GraphQLShop.Web.GraphQL.IAddProductMutation>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<ClientServiceProvider>(sp)));
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::GraphQLShop.Web.GraphQL.IDeleteProductMutation>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<ClientServiceProvider>(sp)));
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::GraphQLShop.Web.GraphQL.IGetProductByIdQuery>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<ClientServiceProvider>(sp)));
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::GraphQLShop.Web.GraphQL.IGetProductsForIndexQuery>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<ClientServiceProvider>(sp)));
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::GraphQLShop.Web.GraphQL.ILoginMutation>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<ClientServiceProvider>(sp)));
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::GraphQLShop.Web.GraphQL.IRegisterMutation>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<ClientServiceProvider>(sp)));
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::GraphQLShop.Web.GraphQL.IUpdateProductMutation>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<ClientServiceProvider>(sp)));
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::GraphQLShop.Web.GraphQL.GraphQLShopClient>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<ClientServiceProvider>(sp)));
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::GraphQLShop.Web.GraphQL.IGraphQLShopClient>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<ClientServiceProvider>(sp)));
@@ -3657,6 +4820,22 @@ namespace Microsoft.Extensions.DependencyInjection
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IResultPatcher<global::System.Text.Json.JsonDocument>, global::StrawberryShake.Json.JsonResultPatcher>(services);
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::GraphQLShop.Web.GraphQL.GetProductsForIndexQuery>(services);
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::GraphQLShop.Web.GraphQL.IGetProductsForIndexQuery>(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::GraphQLShop.Web.GraphQL.GetProductsForIndexQuery>(sp));
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationResultDataFactory<global::GraphQLShop.Web.GraphQL.ILoginResult>, global::GraphQLShop.Web.GraphQL.State.LoginResultFactory>(services);
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationResultDataFactory>(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.IOperationResultDataFactory<global::GraphQLShop.Web.GraphQL.ILoginResult>>(sp));
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationRequestFactory>(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::GraphQLShop.Web.GraphQL.ILoginMutation>(sp));
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationResultBuilder<global::System.Text.Json.JsonDocument, global::GraphQLShop.Web.GraphQL.ILoginResult>, global::GraphQLShop.Web.GraphQL.State.LoginBuilder>(services);
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationExecutor<global::GraphQLShop.Web.GraphQL.ILoginResult>>(services, sp => new global::StrawberryShake.StorelessOperationExecutor<global::System.Text.Json.JsonDocument, global::GraphQLShop.Web.GraphQL.ILoginResult>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.Transport.Http.IHttpConnection>(sp), () => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.IOperationResultBuilder<global::System.Text.Json.JsonDocument, global::GraphQLShop.Web.GraphQL.ILoginResult>>(sp), () => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.IResultPatcher<global::System.Text.Json.JsonDocument>>(sp)));
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IResultPatcher<global::System.Text.Json.JsonDocument>, global::StrawberryShake.Json.JsonResultPatcher>(services);
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::GraphQLShop.Web.GraphQL.LoginMutation>(services);
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::GraphQLShop.Web.GraphQL.ILoginMutation>(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::GraphQLShop.Web.GraphQL.LoginMutation>(sp));
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationResultDataFactory<global::GraphQLShop.Web.GraphQL.IRegisterResult>, global::GraphQLShop.Web.GraphQL.State.RegisterResultFactory>(services);
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationResultDataFactory>(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.IOperationResultDataFactory<global::GraphQLShop.Web.GraphQL.IRegisterResult>>(sp));
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationRequestFactory>(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::GraphQLShop.Web.GraphQL.IRegisterMutation>(sp));
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationResultBuilder<global::System.Text.Json.JsonDocument, global::GraphQLShop.Web.GraphQL.IRegisterResult>, global::GraphQLShop.Web.GraphQL.State.RegisterBuilder>(services);
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationExecutor<global::GraphQLShop.Web.GraphQL.IRegisterResult>>(services, sp => new global::StrawberryShake.StorelessOperationExecutor<global::System.Text.Json.JsonDocument, global::GraphQLShop.Web.GraphQL.IRegisterResult>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.Transport.Http.IHttpConnection>(sp), () => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.IOperationResultBuilder<global::System.Text.Json.JsonDocument, global::GraphQLShop.Web.GraphQL.IRegisterResult>>(sp), () => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.IResultPatcher<global::System.Text.Json.JsonDocument>>(sp)));
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IResultPatcher<global::System.Text.Json.JsonDocument>, global::StrawberryShake.Json.JsonResultPatcher>(services);
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::GraphQLShop.Web.GraphQL.RegisterMutation>(services);
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::GraphQLShop.Web.GraphQL.IRegisterMutation>(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::GraphQLShop.Web.GraphQL.RegisterMutation>(sp));
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationResultDataFactory<global::GraphQLShop.Web.GraphQL.IUpdateProductResult>, global::GraphQLShop.Web.GraphQL.State.UpdateProductResultFactory>(services);
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationResultDataFactory>(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.IOperationResultDataFactory<global::GraphQLShop.Web.GraphQL.IUpdateProductResult>>(sp));
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationRequestFactory>(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::GraphQLShop.Web.GraphQL.IUpdateProductMutation>(sp));

@@ -3,6 +3,16 @@ schema {
   mutation: Mutation
 }
 
+"Defines when a policy shall be executed."
+enum ApplyPolicy {
+  "Before the resolver was executed."
+  BEFORE_RESOLVER
+  "After the resolver was executed."
+  AFTER_RESOLVER
+  "The policy is applied in the validation step before the execution."
+  VALIDATION
+}
+
 type Query {
   products(skip: Int take: Int where: ProductFilterInput order: [ProductSortInput!]): ProductsCollectionSegment
   allProductsRaw: [Product!]!
@@ -13,6 +23,8 @@ type Mutation {
   addProduct(input: AddProductInput!): Product!
   updateProduct(input: UpdateProductInput!): Product!
   deleteProduct(id: Int!): Boolean!
+  login(input: LoginInput!): AuthPayload!
+  register(input: RegisterInput!): AuthPayload!
 }
 
 input ProductFilterInput {
@@ -139,6 +151,21 @@ type Product {
   price: Float!
   categoryId: Int!
   category: Category!
+}
+
+type AuthPayload {
+  token: String!
+  username: String!
+}
+
+input LoginInput {
+  username: String!
+  password: String!
+}
+
+input RegisterInput {
+  username: String!
+  password: String!
 }
 
 type Category {
