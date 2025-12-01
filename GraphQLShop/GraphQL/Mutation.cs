@@ -23,7 +23,7 @@ public class Mutation
             throw new GraphQLException(validationResult.Errors.First().ErrorMessage);
         }
 
-        // 2. Логика поиска категории (используем input.CategoryName)
+        // 2. Логика поиска категории
         var category = db.Categories.FirstOrDefault(c => c.Name == input.CategoryName);
         if (category == null)
         {
@@ -31,7 +31,7 @@ public class Mutation
             db.Categories.Add(category);
         }
 
-        // 3. Создание товара (распаковываем input)
+        // 3. Создание товара
         var newProduct = new Product
         {
             Name = input.Name,
@@ -96,13 +96,12 @@ public class Mutation
         db.Products.Remove(product);
         await db.SaveChangesAsync();
 
-        return true; // Возвращаем true, если удаление прошло успешно
+        return true;
     }
 
-    // НОВАЯ МУТАЦИЯ ЛОГИНА
     public async Task<AuthPayload> Login(
         [Service] AppDbContext db,
-        [Service] ITokenService tokenService, // Наш новый сервис
+        [Service] ITokenService tokenService,
         LoginInput input)
     {
         // 1. Ищем пользователя по имени
@@ -110,7 +109,6 @@ public class Mutation
 
         if (user == null)
         {
-            // Никогда не пишите "Пользователь не найден", пишите общую ошибку для безопасности
             throw new GraphQLException("Неверное имя пользователя или пароль.");
         }
 
@@ -145,7 +143,7 @@ public class Mutation
         var user = new User
         {
             Username = input.Username,
-            Role = "User" // По умолчанию все новые - просто пользователи
+            Role = "User"
         };
 
         // 3. Хешируем пароль

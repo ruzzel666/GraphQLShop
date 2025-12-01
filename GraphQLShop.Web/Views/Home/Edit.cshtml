@@ -8,12 +8,9 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        @* Важно: указываем action="Edit" *@
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-            @* КРИТИЧЕСКИ ВАЖНО: Скрытое поле для ID. 
-               Без него сервер не узнает, какой товар мы обновляем. *@
             <input type="hidden" asp-for="Id" />
 
             <div class="mb-3">

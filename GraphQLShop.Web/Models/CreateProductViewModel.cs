@@ -4,7 +4,6 @@ namespace GraphQLShop.Web.Models;
 
 public class CreateProductViewModel
 {
-    // Атрибуты [Required] и другие нужны для валидации на стороне клиента (в браузере)
     [Required(ErrorMessage = "Пожалуйста, введите название")]
     [Display(Name = "Название товара")]
     public string Name { get; set; } = string.Empty;

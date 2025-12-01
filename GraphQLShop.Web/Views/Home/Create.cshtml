@@ -8,9 +8,7 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        @* Форма отправляет данные на метод Create контроллера Home *@
         <form asp-action="Create">
-            @* Сюда будут выводиться общие ошибки (например, от бэкенда) *@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
             <div class="mb-3">
@@ -25,7 +23,6 @@
             </div>
             <div class="mb-3">
                 <label asp-for="CategoryName" class="form-label"></label>
-                @* Для простоты пока используем текстовое поле для категории *@
                 <input asp-for="CategoryName" class="form-control" />
                 <span asp-validation-for="CategoryName" class="text-danger"></span>
             </div>
@@ -37,7 +34,6 @@
     </div>
 </div>
 
-@* Подключаем скрипты для валидации на клиенте без перезагрузки страницы *@
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");

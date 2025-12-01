@@ -26,13 +26,6 @@ public class Query
             .ToList();
     }
 
-    //public Product GetProduct([Service] AppDbContext db, string name)
-    //{
-    //    return db.Products
-    //        .Include(p => p.Category)
-    //        .FirstOrDefault(p => p.Name == name);
-    //}
-
     public Product GetProduct([Service] AppDbContext db, int id)
     {
         return db.Products

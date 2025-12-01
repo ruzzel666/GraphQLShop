@@ -19,7 +19,6 @@ builder.Services
         },
         builder =>
         {
-            // «десь builder Ч это IHttpClientBuilder, поэтому метод доступен
             builder.AddHttpMessageHandler<AuthHeaderHandler>();
         }
     );

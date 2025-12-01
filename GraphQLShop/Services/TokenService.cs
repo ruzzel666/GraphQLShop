@@ -24,11 +24,9 @@ public class TokenService : ITokenService
         var audience = jwtSettings["Audience"];
         var duration = Convert.ToInt32(jwtSettings["DurationInMinutes"]);
 
-        // 2. Создаем "Клеймы" (Claims) - информацию, которую мы зашьем в токен.
-        // Обычно это ID пользователя, его имя и роль.
+        // 2. Создаем клеймы
         var claims = new List<Claim>
         {
-            // Стандартные имена клеймов (Subject, Name, Role)
             new Claim(JwtRegisteredClaimNames.Sub, user.Id.ToString()),
             new Claim(JwtRegisteredClaimNames.Name, user.Username),
             new Claim(ClaimTypes.Role, user.Role)

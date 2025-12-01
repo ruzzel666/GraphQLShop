@@ -1,4 +1,4 @@
-﻿using GraphQLShop.Web.GraphQL; // Наш сгенерированный клиент
+﻿using GraphQLShop.Web.GraphQL;
 using GraphQLShop.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using StrawberryShake;
@@ -13,7 +13,7 @@ public class AccountController : Controller
     {
         _graphQLClient = graphQLClient;
     }
-
+    #region Авторизация пользователя
     [HttpGet]
     public IActionResult Login()
     {
@@ -41,7 +41,6 @@ public class AccountController : Controller
         {
             foreach (var error in result.Errors)
             {
-                // Выводим ошибку на форму
                 ModelState.AddModelError(string.Empty, error.Message);
             }
             return View(model);
@@ -50,32 +49,30 @@ public class AccountController : Controller
         // 3. Получаем токен
         var token = result.Data!.Login.Token;
 
-        // 4. СОХРАНЯЕМ ТОКЕН В КУКИ
+        // 4. Сохраняем токен в куки
         var cookieOptions = new CookieOptions
         {
             HttpOnly = true,
-            Secure = true,   // Передавать только по HTTPS
-            SameSite = SameSiteMode.Strict, // Защита от CSRF
-            // Время жизни куки ставим такое же, как у токена на сервере (60 мин)
+            Secure = true,
+            SameSite = SameSiteMode.Strict,
             Expires = DateTime.UtcNow.AddMinutes(60)
         };
 
-        // "X-Access-Token" — это имя нашей куки. Запомните его.
         Response.Cookies.Append("X-Access-Token", token, cookieOptions);
 
         // 5. Перенаправляем на главную страницу
         return RedirectToAction("Index", "Home");
     }
-
-    // POST: /Account/Logout
+    
     [HttpPost]
     public IActionResult Logout()
     {
-        // Для выхода просто удаляем куку
         Response.Cookies.Delete("X-Access-Token");
         return RedirectToAction("Index", "Home");
     }
+    #endregion Авторизация пользователя
 
+    #region Регистрация пользователя
     [HttpGet]
     public IActionResult Register()
     {
@@ -122,4 +119,5 @@ public class AccountController : Controller
 
         return RedirectToAction("Index", "Home");
     }
+    #endregion Регистрация пользователя
 }
