@@ -111,3 +111,11 @@ C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\Microso
 C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\HotChocolate.AspNetCore.Authorization.dll
+C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
