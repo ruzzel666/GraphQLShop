@@ -83,5 +83,15 @@
     "C:\\Users\\gnz29\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\gnz29\\.nuget\\packages\\yarp.reverseproxy\\2.3.0\\yarp.reverseproxy.2.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "message": "Ошибка чтения файла кэша C:\\Users\\gnz29\\Documents\\GitHub\\GraphQLShop\\GraphQLShop\\obj\\project.nuget.cache: '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0.",
+      "projectPath": "C:\\Users\\gnz29\\Documents\\GitHub\\GraphQLShop\\GraphQLShop\\GraphQLShop.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\gnz29\\Documents\\GitHub\\GraphQLShop\\GraphQLShop\\GraphQLShop.csproj",
+      "targetGraphs": []
+    }
+  ]
 }
