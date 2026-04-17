@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  graphql-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: graphql-api
+    ports:
+      - "7000:80"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    networks:
+      - shared-app-network
+
+networks:
+  shared-app-network:
+    name: graphql-spa-network
+    driver: bridge

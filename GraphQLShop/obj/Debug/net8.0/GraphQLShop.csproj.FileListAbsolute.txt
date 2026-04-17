@@ -228,3 +228,11 @@ C:\Users\Georgy.Zaitsev\Documents\GitHub\GraphQLShop\GraphQLShop\obj\Debug\net8.
 C:\Users\Georgy.Zaitsev\Documents\GitHub\GraphQLShop\GraphQLShop\obj\Debug\net8.0\GraphQLShop.pdb
 C:\Users\Georgy.Zaitsev\Documents\GitHub\GraphQLShop\GraphQLShop\obj\Debug\net8.0\GraphQLShop.genruntimeconfig.cache
 C:\Users\Georgy.Zaitsev\Documents\GitHub\GraphQLShop\GraphQLShop\obj\Debug\net8.0\ref\GraphQLShop.dll
+C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\gnz29\Documents\GitHub\GraphQLShop\GraphQLShop\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
